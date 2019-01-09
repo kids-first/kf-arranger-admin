@@ -3,10 +3,7 @@ import adminGraphql from "@arranger/admin/dist";
 import cors from "cors";
 import express from "express";
 import egoTokenMiddleware from "ego-token-middleware";
-
-const ES_HOST = "http://localhost:9200";
-const PORT = 9090;
-const egoURL = "http://localhost:9090";
+import { ES_HOST, PORT, EGO_URL } from "./env";
 
 const start = async () => {
   const app = express();
@@ -14,7 +11,7 @@ const start = async () => {
 
   app.use(
     egoTokenMiddleware({
-      egoURL,
+      egoURL: EGO_URL,
       accessRules: [
         {
           type: "allow",
