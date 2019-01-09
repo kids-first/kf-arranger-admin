@@ -1,0 +1,38 @@
+{
+  "name": "kf-arranger-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "watch": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@arranger/admin": "^1.0.1",
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "chalk-animation": "^1.5.0",
+    "cors": "^2.8.4",
+    "dotenv": "^6.2.0",
+    "ego-token-middleware": "^1.0.1",
+    "express": "^4.16.2",
+    "filesize": "^3.6.1",
+    "graphql-parse-resolve-info": "^4.0.0-beta.7",
+    "node-fetch": "^2.1.1",
+    "socket.io": "^2.0.4",
+    "url-join": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/register": "^7.0.0-beta.40",
+    "nodemon": "^1.17.5",
+    "prettier": "^1.11.1"
+  }
+}
