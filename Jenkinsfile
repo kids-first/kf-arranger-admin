@@ -1,2 +1,2 @@
 @Library(value="oicr", changelog=false) _
-arranger_admin_api{}
+ecs_service_type_1{}
