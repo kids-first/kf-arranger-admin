@@ -1,5 +1,5 @@
 import "babel-polyfill";
-import adminGraphql from "@arranger/admin/dist";
+import adminGraphql from "@kfarranger/admin/dist";
 import cors from "cors";
 import express from "express";
 import egoTokenMiddleware from "ego-token-middleware";
