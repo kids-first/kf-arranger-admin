@@ -7,9 +7,9 @@
 
 # Kids First Arranger Admin Service
 
-This is an instantiation of the [@arranger/admin](https://github.com/overture-stack/arranger/tree/master/modules/admin) application for the Kids First portal, with an integration with [Ego](https://github.com/overture-stack/ego) for authentication.
+This is an instantiation of the [@kfarranger/admin](https://github.com/kids-first/arranger/tree/master/modules/admin) application for the Kids First portal, with an integration with [Ego](https://github.com/overture-stack/ego) for authentication.
 
-Arranger admin server provides a GraphQL API for configuring Arranger metadata that is used by [@arranger/server](https://github.com/overture-stack/arranger/tree/master/modules/server). The API itself is consumed by [@arranger/admin-ui](https://github.com/overture-stack/arranger/tree/master/modules/admin-ui).
+Arranger admin server provides a GraphQL API for configuring Arranger metadata that is used by [@kfarranger/server](https://github.com/kids-first/arranger/tree/master/modules/server). The API itself is consumed by [@kfarranger/admin-ui](https://github.com/kids-first/arranger/tree/master/modules/admin-ui).
 
 ## Development:
 
