@@ -2,7 +2,7 @@ import "babel-polyfill";
 import adminGraphql from "@kfarranger/admin/dist";
 import cors from "cors";
 import express from "express";
-import egoTokenMiddleware from "ego-token-middleware";
+import egoTokenMiddleware from "kfego-token-middleware";
 import { ES_HOST, PORT, EGO_URL } from "./env";
 import { name, version } from "../package.json";
 
