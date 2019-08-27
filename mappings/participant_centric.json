@@ -1,0 +1,4543 @@
+{
+    "index": "participant_centric",
+    "name": "participant",
+    "esType": "participant_centric",
+    "timestamp": "2019-08-01T00:00:30.843Z",
+    "active": true,
+    "config": {
+      "aggs-state": {
+        "timestamp": "2019-08-01T00:00:30.843Z",
+        "state": [
+          {
+            "field": "alias_group",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "available_data_types",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__age_at_event_days",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "biospecimens__analyte_type",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__composition",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__concentration_mg_per_ml",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "biospecimens__external_aliquot_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__external_sample_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__kf_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__ncit_id_anatomical_site",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__ncit_id_tissue_type",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__sequencing_center_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__shipment_date",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__shipment_origin",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__source_text_anatomical_site",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__source_text_tissue_type",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__source_text_tumor_descriptor",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__spatial_descriptor",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__uberon_id_anatomical_site",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "diagnoses__age_at_event_days",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "diagnoses__diagnosis_category",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "diagnoses__external_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "diagnoses__icd_id_diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "diagnoses__kf_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "diagnoses__mondo_id_diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "diagnoses__ncit_id_diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "diagnoses__source_text_diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "diagnoses__source_text_tumor_location",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "diagnoses__spatial_descriptor",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "diagnoses__uberon_id_tumor_location",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "ethnicity",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "external_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__available_data_types",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__composition",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__alias_group",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__available_data_types",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__diagnoses__age_at_event_days",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__diagnoses__diagnosis_category",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__diagnoses__external_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__diagnoses__icd_id_diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__diagnoses__kf_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__diagnoses__mondo_id_diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__diagnoses__ncit_id_diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__diagnoses__source_text_diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__diagnoses__source_text_tumor_location",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__diagnoses__spatial_descriptor",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__diagnoses__uberon_id_tumor_location",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__ethnicity",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__external_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__gender",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__is_proband",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__kf_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__outcome__age_at_event_days",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__outcome__disease_related",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__outcome__external_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__outcome__kf_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__outcome__vital_status",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__race",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__relationship",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__shared_hpo_ids",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__father_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__mother_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__availability",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__controlled_access",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__created_at",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "files__data_type",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__external_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__file_format",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__file_name",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__is_harmonized",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__kf_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__modified_at",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "files__reference_genome",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__experiment_date",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__experiment_strategy",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__external_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__instrument_model",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__is_paired_end",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__kf_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__library_name",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__library_strand",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__max_insert_size",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__mean_depth",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__mean_insert_size",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__mean_read_length",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__platform",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__sequencing_center_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__sequencing_experiments__total_reads",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "files__size",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "gender",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "is_proband",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "kf_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "outcome__age_at_event_days",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "outcome__disease_related",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "outcome__external_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "outcome__kf_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "outcome__participant_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "outcome__vital_status",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "race",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "study__attribution",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "study__data_access_authority",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "study__external_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "study__investigator_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "study__kf_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "study__name",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "study__release_status",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "study__short_name",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "study__version",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__latest_did",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__dbgap_consent_code",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "diagnoses__diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__diagnoses__diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__acl",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "affected_status",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__volume_ul",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "diagnosis_category",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__affected_status",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__diagnosis_category",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__consent_type",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__phenotype__age_at_event_days",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__phenotype__ancestral_hpo_ids",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__phenotype__external_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__phenotype__hpo_phenotype_not_observed",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__phenotype__hpo_phenotype_observed",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__phenotype__hpo_phenotype_observed_text",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__phenotype__shared_hpo_ids",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__phenotype__snomed_phenotype_not_observed",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__phenotype__snomed_phenotype_observed",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__phenotype__source_text_phenotype",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "family__family_compositions__family_members__phenotype__observed",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "phenotype__age_at_event_days",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },
+          {
+            "field": "phenotype__ancestral_hpo_ids",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "phenotype__external_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "phenotype__hpo_phenotype_not_observed",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "phenotype__hpo_phenotype_observed",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "phenotype__hpo_phenotype_observed_text",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "phenotype__snomed_phenotype_not_observed",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "phenotype__snomed_phenotype_observed",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "phenotype__source_text_phenotype",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "phenotype__observed",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__method_of_sample_procurement",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__access_urls",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "files__repository",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          }
+        ]
+      },
+      "columns-state": {
+        "state": {
+          "type": "participant_centric",
+          "keyField": "id",
+          "defaultSorted": [
+            {
+              "id": "alias_group",
+              "desc": false
+            }
+          ],
+          "columns": [
+            {
+              "canChangeShow": true,
+              "field": "family.family_compositions.family_members.phenotype.hits.total",
+              "show": false,
+              "accessor": "family.family_compositions.hits.edges[0].node.family_members.hits.edges[0].node.phenotype.hits.total",
+              "sortable": true,
+              "type": "number"
+            },
+            {
+              "canChangeShow": true,
+              "field": "phenotype.hits.total",
+              "show": false,
+              "accessor": "phenotype.hits.total",
+              "sortable": true,
+              "type": "number"
+            },
+            {
+              "canChangeShow": true,
+              "field": "alias_group",
+              "query": null,
+              "show": false,
+              "accessor": "alias_group",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "available_data_types",
+              "query": null,
+              "show": false,
+              "accessor": "available_data_types",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.age_at_event_days",
+              "query": "biospecimens { hits { edges { node { age_at_event_days } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.age_at_event_days",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.analyte_type",
+              "query": "biospecimens { hits { edges { node { analyte_type } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.analyte_type",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.composition",
+              "query": "biospecimens { hits { edges { node { composition } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.composition",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.concentration_mg_per_ml",
+              "query": "biospecimens { hits { edges { node { concentration_mg_per_ml } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.concentration_mg_per_ml",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.external_aliquot_id",
+              "query": "biospecimens { hits { edges { node { external_aliquot_id } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.external_aliquot_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.external_sample_id",
+              "query": "biospecimens { hits { edges { node { external_sample_id } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.external_sample_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.kf_id",
+              "query": "biospecimens { hits { edges { node { kf_id } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.kf_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.ncit_id_anatomical_site",
+              "query": "biospecimens { hits { edges { node { ncit_id_anatomical_site } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.ncit_id_anatomical_site",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.ncit_id_tissue_type",
+              "query": "biospecimens { hits { edges { node { ncit_id_tissue_type } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.ncit_id_tissue_type",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.sequencing_center_id",
+              "query": "biospecimens { hits { edges { node { sequencing_center_id } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.sequencing_center_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.shipment_date",
+              "query": "biospecimens { hits { edges { node { shipment_date } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.shipment_date",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.shipment_origin",
+              "query": "biospecimens { hits { edges { node { shipment_origin } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.shipment_origin",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.source_text_anatomical_site",
+              "query": "biospecimens { hits { edges { node { source_text_anatomical_site } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.source_text_anatomical_site",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.source_text_tissue_type",
+              "query": "biospecimens { hits { edges { node { source_text_tissue_type } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.source_text_tissue_type",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.source_text_tumor_descriptor",
+              "query": "biospecimens { hits { edges { node { source_text_tumor_descriptor } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.source_text_tumor_descriptor",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.spatial_descriptor",
+              "query": "biospecimens { hits { edges { node { spatial_descriptor } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.spatial_descriptor",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.uberon_id_anatomical_site",
+              "query": "biospecimens { hits { edges { node { uberon_id_anatomical_site } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.uberon_id_anatomical_site",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": true,
+              "field": "biospecimens.hits.total",
+              "query": null,
+              "show": false,
+              "accessor": "biospecimens.hits.total",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "number"
+            },
+            {
+              "canChangeShow": false,
+              "field": "diagnoses.age_at_event_days",
+              "query": "diagnoses { hits { edges { node { age_at_event_days } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.diagnoses.hits.edges[*].node.age_at_event_days",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "diagnoses.diagnosis_category",
+              "query": "diagnoses { hits { edges { node { diagnosis_category } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.diagnoses.hits.edges[*].node.diagnosis_category",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "diagnoses.external_id",
+              "query": "diagnoses { hits { edges { node { external_id } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.diagnoses.hits.edges[*].node.external_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "diagnoses.icd_id_diagnosis",
+              "query": "diagnoses { hits { edges { node { icd_id_diagnosis } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.diagnoses.hits.edges[*].node.icd_id_diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "diagnoses.kf_id",
+              "query": "diagnoses { hits { edges { node { kf_id } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.diagnoses.hits.edges[*].node.kf_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "diagnoses.mondo_id_diagnosis",
+              "query": "diagnoses { hits { edges { node { mondo_id_diagnosis } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.diagnoses.hits.edges[*].node.mondo_id_diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "diagnoses.ncit_id_diagnosis",
+              "query": "diagnoses { hits { edges { node { ncit_id_diagnosis } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.diagnoses.hits.edges[*].node.ncit_id_diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "diagnoses.source_text_diagnosis",
+              "query": "diagnoses { hits { edges { node { source_text_diagnosis } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.diagnoses.hits.edges[*].node.source_text_diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "diagnoses.source_text_tumor_location",
+              "query": "diagnoses { hits { edges { node { source_text_tumor_location } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.diagnoses.hits.edges[*].node.source_text_tumor_location",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "diagnoses.spatial_descriptor",
+              "query": "diagnoses { hits { edges { node { spatial_descriptor } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.diagnoses.hits.edges[*].node.spatial_descriptor",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "diagnoses.uberon_id_tumor_location",
+              "query": "diagnoses { hits { edges { node { uberon_id_tumor_location } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.diagnoses.hits.edges[*].node.uberon_id_tumor_location",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": true,
+              "field": "diagnoses.hits.total",
+              "query": null,
+              "show": false,
+              "accessor": "diagnoses.hits.total",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "number"
+            },
+            {
+              "canChangeShow": true,
+              "field": "ethnicity",
+              "query": null,
+              "show": false,
+              "accessor": "ethnicity",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "external_id",
+              "query": null,
+              "show": false,
+              "accessor": "external_id",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.available_data_types",
+              "query": "family { family_compositions { hits { edges { node { available_data_types } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.available_data_types",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.composition",
+              "query": "family { family_compositions { hits { edges { node { composition } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.composition",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.alias_group",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { alias_group } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.alias_group",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.available_data_types",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { available_data_types } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.available_data_types",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.diagnoses.age_at_event_days",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { age_at_event_days } } } } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.age_at_event_days",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.diagnoses.diagnosis_category",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { diagnosis_category } } } } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.diagnosis_category",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.diagnoses.external_id",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { external_id } } } } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.external_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.diagnoses.icd_id_diagnosis",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { icd_id_diagnosis } } } } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.icd_id_diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.diagnoses.kf_id",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { kf_id } } } } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.kf_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.diagnoses.mondo_id_diagnosis",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { mondo_id_diagnosis } } } } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.mondo_id_diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.diagnoses.ncit_id_diagnosis",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { ncit_id_diagnosis } } } } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.ncit_id_diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.diagnoses.source_text_diagnosis",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { source_text_diagnosis } } } } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.source_text_diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.diagnoses.source_text_tumor_location",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { source_text_tumor_location } } } } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.source_text_tumor_location",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.diagnoses.spatial_descriptor",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { spatial_descriptor } } } } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.spatial_descriptor",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.diagnoses.uberon_id_tumor_location",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { uberon_id_tumor_location } } } } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.uberon_id_tumor_location",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": true,
+              "field": "family.family_compositions.family_members.diagnoses.hits.total",
+              "query": null,
+              "show": false,
+              "accessor": "family.family_compositions.hits.edges[0].node.family_members.hits.edges[0].node.diagnoses.hits.total",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "number"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.ethnicity",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { ethnicity } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.ethnicity",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.external_id",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { external_id } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.external_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.gender",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { gender } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.gender",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.is_proband",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { is_proband } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.is_proband",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.kf_id",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { kf_id } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.kf_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.outcome.age_at_event_days",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { outcome { age_at_event_days } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.outcome.age_at_event_days",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.outcome.disease_related",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { outcome { disease_related } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.outcome.disease_related",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.outcome.external_id",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { outcome { external_id } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.outcome.external_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.outcome.kf_id",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { outcome { kf_id } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.outcome.kf_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.outcome.vital_status",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { outcome { vital_status } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.outcome.vital_status",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.race",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { race } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.race",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.relationship",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { relationship } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.relationship",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": true,
+              "field": "family.family_compositions.family_members.hits.total",
+              "query": null,
+              "show": false,
+              "accessor": "family.family_compositions.hits.edges[0].node.family_members.hits.total",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "number"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.shared_hpo_ids",
+              "query": "family { family_compositions { hits { edges { node { shared_hpo_ids } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.shared_hpo_ids",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": true,
+              "field": "family.family_compositions.hits.total",
+              "query": null,
+              "show": false,
+              "accessor": "family.family_compositions.hits.total",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "number"
+            },
+            {
+              "canChangeShow": true,
+              "field": "family.father_id",
+              "query": null,
+              "show": false,
+              "accessor": "family.father_id",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "family.mother_id",
+              "query": null,
+              "show": false,
+              "accessor": "family.mother_id",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.availability",
+              "query": "files { hits { edges { node { availability } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.availability",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.controlled_access",
+              "query": "files { hits { edges { node { controlled_access } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.controlled_access",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.created_at",
+              "query": "files { hits { edges { node { created_at } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.created_at",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.data_type",
+              "query": "files { hits { edges { node { data_type } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.data_type",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.external_id",
+              "query": "files { hits { edges { node { external_id } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.external_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.file_format",
+              "query": "files { hits { edges { node { file_format } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.file_format",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.file_name",
+              "query": "files { hits { edges { node { file_name } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.file_name",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.is_harmonized",
+              "query": "files { hits { edges { node { is_harmonized } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.is_harmonized",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.kf_id",
+              "query": "files { hits { edges { node { kf_id } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.kf_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.modified_at",
+              "query": "files { hits { edges { node { modified_at } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.modified_at",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.reference_genome",
+              "query": "files { hits { edges { node { reference_genome } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.reference_genome",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.experiment_date",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { experiment_date } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.experiment_date",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.experiment_strategy",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { experiment_strategy } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.experiment_strategy",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.external_id",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { external_id } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.external_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.instrument_model",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { instrument_model } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.instrument_model",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.is_paired_end",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { is_paired_end } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.is_paired_end",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.kf_id",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { kf_id } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.kf_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.library_name",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { library_name } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.library_name",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.library_strand",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { library_strand } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.library_strand",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.max_insert_size",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { max_insert_size } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.max_insert_size",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.mean_depth",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { mean_depth } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.mean_depth",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.mean_insert_size",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { mean_insert_size } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.mean_insert_size",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.mean_read_length",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { mean_read_length } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.mean_read_length",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.platform",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { platform } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.platform",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.sequencing_center_id",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { sequencing_center_id } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.sequencing_center_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.sequencing_experiments.total_reads",
+              "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { total_reads } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.total_reads",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": true,
+              "field": "files.sequencing_experiments.hits.total",
+              "query": null,
+              "show": false,
+              "accessor": "files.hits.edges[0].node.sequencing_experiments.hits.total",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "number"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.size",
+              "query": "files { hits { edges { node { size } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.size",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": true,
+              "field": "files.hits.total",
+              "query": null,
+              "show": false,
+              "accessor": "files.hits.total",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "number"
+            },
+            {
+              "canChangeShow": true,
+              "field": "gender",
+              "query": null,
+              "show": false,
+              "accessor": "gender",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "is_proband",
+              "query": null,
+              "show": false,
+              "accessor": "is_proband",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "boolean"
+            },
+            {
+              "canChangeShow": true,
+              "field": "kf_id",
+              "query": null,
+              "show": false,
+              "accessor": "kf_id",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "outcome.age_at_event_days",
+              "query": null,
+              "show": false,
+              "accessor": "outcome.age_at_event_days",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "number"
+            },
+            {
+              "canChangeShow": true,
+              "field": "outcome.disease_related",
+              "query": null,
+              "show": false,
+              "accessor": "outcome.disease_related",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "outcome.external_id",
+              "query": null,
+              "show": false,
+              "accessor": "outcome.external_id",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "outcome.kf_id",
+              "query": null,
+              "show": false,
+              "accessor": "outcome.kf_id",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "outcome.participant_id",
+              "query": null,
+              "show": false,
+              "accessor": "outcome.participant_id",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "outcome.vital_status",
+              "query": null,
+              "show": false,
+              "accessor": "outcome.vital_status",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "race",
+              "query": null,
+              "show": false,
+              "accessor": "race",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "study.attribution",
+              "query": null,
+              "show": false,
+              "accessor": "study.attribution",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "study.data_access_authority",
+              "query": null,
+              "show": false,
+              "accessor": "study.data_access_authority",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "study.external_id",
+              "query": null,
+              "show": false,
+              "accessor": "study.external_id",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "study.investigator_id",
+              "query": null,
+              "show": false,
+              "accessor": "study.investigator_id",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "study.kf_id",
+              "query": null,
+              "show": false,
+              "accessor": "study.kf_id",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "study.name",
+              "query": null,
+              "show": false,
+              "accessor": "study.name",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "study.release_status",
+              "query": null,
+              "show": false,
+              "accessor": "study.release_status",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "study.short_name",
+              "query": null,
+              "show": false,
+              "accessor": "study.short_name",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "study.version",
+              "query": null,
+              "show": false,
+              "accessor": "study.version",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.latest_did",
+              "query": "files { hits { edges { node { latest_did } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.latest_did",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.dbgap_consent_code",
+              "query": "biospecimens { hits { edges { node { dbgap_consent_code } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.dbgap_consent_code",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "diagnoses.diagnosis",
+              "query": "diagnoses { hits { edges { node { diagnosis } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.diagnoses.hits.edges[*].node.diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.diagnoses.diagnosis",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { diagnosis } } } } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": true,
+              "field": "family_id",
+              "query": null,
+              "show": false,
+              "accessor": "family_id",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.acl",
+              "query": "files { hits { edges { node { acl } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.acl",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": true,
+              "field": "affected_status",
+              "query": null,
+              "show": false,
+              "accessor": "affected_status",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "boolean"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.volume_ul",
+              "query": "biospecimens { hits { edges { node { volume_ul } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.volume_ul",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": true,
+              "field": "diagnosis_category",
+              "query": null,
+              "show": false,
+              "accessor": "diagnosis_category",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.affected_status",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { affected_status } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.affected_status",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.diagnosis_category",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnosis_category } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnosis_category",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.consent_type",
+              "query": "biospecimens { hits { edges { node { consent_type } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.consent_type",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.phenotype.age_at_event_days",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { age_at_event_days } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.age_at_event_days",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.phenotype.ancestral_hpo_ids",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { ancestral_hpo_ids } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.ancestral_hpo_ids",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.phenotype.external_id",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { external_id } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.external_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.phenotype.hpo_phenotype_not_observed",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hpo_phenotype_not_observed } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hpo_phenotype_not_observed",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.phenotype.hpo_phenotype_observed",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hpo_phenotype_observed } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hpo_phenotype_observed",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.phenotype.hpo_phenotype_observed_text",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hpo_phenotype_observed_text } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hpo_phenotype_observed_text",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.phenotype.shared_hpo_ids",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { shared_hpo_ids } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.shared_hpo_ids",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.phenotype.snomed_phenotype_not_observed",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { snomed_phenotype_not_observed } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.snomed_phenotype_not_observed",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.phenotype.snomed_phenotype_observed",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { snomed_phenotype_observed } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.snomed_phenotype_observed",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.phenotype.source_text_phenotype",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { source_text_phenotype } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.source_text_phenotype",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "family.family_compositions.family_members.phenotype.observed",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { observed } } } } } } } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.observed",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": true,
+              "field": "phenotype.age_at_event_days",
+              "query": null,
+              "show": false,
+              "accessor": "phenotype.age_at_event_days",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "number"
+            },
+            {
+              "canChangeShow": true,
+              "field": "phenotype.ancestral_hpo_ids",
+              "query": null,
+              "show": false,
+              "accessor": "phenotype.ancestral_hpo_ids",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "phenotype.external_id",
+              "query": null,
+              "show": false,
+              "accessor": "phenotype.external_id",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "phenotype.hpo_phenotype_not_observed",
+              "query": null,
+              "show": false,
+              "accessor": "phenotype.hpo_phenotype_not_observed",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "phenotype.hpo_phenotype_observed",
+              "query": null,
+              "show": false,
+              "accessor": "phenotype.hpo_phenotype_observed",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "phenotype.hpo_phenotype_observed_text",
+              "query": null,
+              "show": false,
+              "accessor": "phenotype.hpo_phenotype_observed_text",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "phenotype.snomed_phenotype_not_observed",
+              "query": null,
+              "show": false,
+              "accessor": "phenotype.snomed_phenotype_not_observed",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "phenotype.snomed_phenotype_observed",
+              "query": null,
+              "show": false,
+              "accessor": "phenotype.snomed_phenotype_observed",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "phenotype.source_text_phenotype",
+              "query": null,
+              "show": false,
+              "accessor": "phenotype.source_text_phenotype",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "string"
+            },
+            {
+              "canChangeShow": true,
+              "field": "phenotype.observed",
+              "query": null,
+              "show": false,
+              "accessor": "phenotype.observed",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "boolean"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.method_of_sample_procurement",
+              "query": "biospecimens { hits { edges { node { method_of_sample_procurement } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.method_of_sample_procurement",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.access_urls",
+              "query": "files { hits { edges { node { access_urls } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.access_urls",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "files.repository",
+              "query": "files { hits { edges { node { repository } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.files.hits.edges[*].node.repository",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            }
+          ]
+        },
+        "timestamp": "2019-08-01T00:00:30.843Z"
+      },
+      "matchbox-state": {
+        "state": [
+          {
+            "keyField": null,
+            "field": "",
+            "displayName": "participant",
+            "searchFields": [],
+            "isActive": false
+          },
+          {
+            "keyField": null,
+            "field": "biospecimens",
+            "displayName": "Biospecimens",
+            "searchFields": [],
+            "isActive": false
+          },
+          {
+            "keyField": null,
+            "field": "diagnoses",
+            "displayName": "Diagnoses",
+            "searchFields": [],
+            "isActive": false
+          },
+          {
+            "keyField": null,
+            "field": "family.family_compositions",
+            "displayName": "Family Family Compositions",
+            "searchFields": [],
+            "isActive": false
+          },
+          {
+            "keyField": null,
+            "field": "family.family_compositions.family_members",
+            "displayName": "Family Family Compositions Family Members",
+            "searchFields": [],
+            "isActive": false
+          },
+          {
+            "keyField": null,
+            "field": "family.family_compositions.family_members.diagnoses",
+            "displayName": "Family Family Compositions Family Members Diagnoses",
+            "searchFields": [],
+            "isActive": false
+          },
+          {
+            "keyField": null,
+            "field": "files",
+            "displayName": "Files",
+            "searchFields": [],
+            "isActive": false
+          },
+          {
+            "keyField": null,
+            "field": "files.sequencing_experiments",
+            "displayName": "Files Sequencing Experiments",
+            "searchFields": [],
+            "isActive": false
+          },
+          {
+            "keyField": null,
+            "field": "family.family_compositions.family_members.phenotype",
+            "displayName": "Family Family Compositions Family Members Phenotype",
+            "searchFields": [],
+            "isActive": false
+          },
+          {
+            "keyField": null,
+            "field": "phenotype",
+            "displayName": "Phenotype",
+            "searchFields": [],
+            "isActive": false
+          }
+        ],
+        "timestamp": "2019-08-01T00:00:30.843Z"
+      },
+      "extended": [
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "affected_status",
+          "displayName": "Affected Status",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "boolean",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "alias_group",
+          "displayName": "Alias Group",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "available_data_types",
+          "displayName": "Available Data Types",
+          "active": false,
+          "isArray": true,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens",
+          "displayName": "Biospecimens",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "nested",
+          "primaryKey": false
+        },
+        {
+          "unit": "d",
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.age_at_event_days",
+          "displayName": "Age at Sample Acquisition",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "integer",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.analyte_type",
+          "displayName": "Analyte Type",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.composition",
+          "displayName": "Composition",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.concentration_mg_per_ml",
+          "displayName": "Concentration Mg Per Ml",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "float",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.consent_type",
+          "displayName": "Consent Type",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.dbgap_consent_code",
+          "displayName": "Dbgap Consent Code",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.external_aliquot_id",
+          "displayName": "External Aliquot Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.external_sample_id",
+          "displayName": "External Sample Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.kf_id",
+          "displayName": "Biospecimens Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.method_of_sample_procurement",
+          "displayName": "Method Of Sample Procurement",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.ncit_id_anatomical_site",
+          "displayName": "Anatomical Site (NCIT)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.ncit_id_tissue_type",
+          "displayName": "Tissue Type (NCIT)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.sequencing_center_id",
+          "displayName": "Sequencing Center Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.shipment_date",
+          "displayName": "Shipment Date",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.shipment_origin",
+          "displayName": "Shipment Origin",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.source_text_anatomical_site",
+          "displayName": "Anatomical Site (Source Text)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.source_text_tissue_type",
+          "displayName": "Tissue Type (Source Text)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.source_text_tumor_descriptor",
+          "displayName": "Tumor Descriptor",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.spatial_descriptor",
+          "displayName": "Spatial Descriptor",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.uberon_id_anatomical_site",
+          "displayName": "Uberon Id Anatomical Site",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.volume_ul",
+          "displayName": "Volume uL",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "float",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses",
+          "displayName": "Diagnoses",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "nested",
+          "primaryKey": false
+        },
+        {
+          "unit": "d",
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses.age_at_event_days",
+          "displayName": "Age at Diagnosis",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "integer",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses.diagnosis",
+          "displayName": "Diagnosis",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses.diagnosis_category",
+          "displayName": "Diagnosis Category",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses.external_id",
+          "displayName": "Diagnoses External Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses.icd_id_diagnosis",
+          "displayName": "Icd Id Diagnosis",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses.kf_id",
+          "displayName": "Diagnoses Kf Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses.mondo_id_diagnosis",
+          "displayName": "Diagnosis (Mondo)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses.ncit_id_diagnosis",
+          "displayName": "Diagnosis (NCIT)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses.source_text_diagnosis",
+          "displayName": "Diagnosis (Source Text)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses.source_text_tumor_location",
+          "displayName": "Tumor Location",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses.spatial_descriptor",
+          "displayName": "Diagnoses Spatial Descriptor",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses.uberon_id_tumor_location",
+          "displayName": "Diagnoses Uberon Id Tumor Location",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnosis_category",
+          "displayName": "Diagnosis Category",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "ethnicity",
+          "displayName": "Ethnicity",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "external_id",
+          "displayName": "External Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family",
+          "displayName": "Family",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "object",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions",
+          "displayName": "Family Compositions",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "nested",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.available_data_types",
+          "displayName": "Family Shared Available Data Types",
+          "active": false,
+          "isArray": true,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.composition",
+          "displayName": "Family Composition",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members",
+          "displayName": "Family Members",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "nested",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.affected_status",
+          "displayName": "Affected Status",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "boolean",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.alias_group",
+          "displayName": "Alias Group",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.available_data_types",
+          "displayName": "Available Data Types",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnoses",
+          "displayName": "Diagnoses",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "nested",
+          "primaryKey": false
+        },
+        {
+          "unit": "d",
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnoses.age_at_event_days",
+          "displayName": "Age at Diagnosis",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "integer",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnoses.diagnosis",
+          "displayName": "Diagnosis",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnoses.diagnosis_category",
+          "displayName": "Diagnosis Category",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnoses.external_id",
+          "displayName": "Family External Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnoses.icd_id_diagnosis",
+          "displayName": "Icd Id Diagnosis",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnoses.kf_id",
+          "displayName": "Family Family Compositions Family Members Diagnoses Kf Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnoses.mondo_id_diagnosis",
+          "displayName": "Mondo Id Diagnosis",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnoses.ncit_id_diagnosis",
+          "displayName": "Diagnosis (NCIT)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnoses.source_text_diagnosis",
+          "displayName": "Source Text Diagnosis",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnoses.source_text_tumor_location",
+          "displayName": "Tumor Location",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnoses.spatial_descriptor",
+          "displayName": "Spatial Descriptor",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnoses.uberon_id_tumor_location",
+          "displayName": "Family Family Compositions Family Members Diagnoses Uberon Id Tumor Location",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.diagnosis_category",
+          "displayName": "Diagnosis Category",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.ethnicity",
+          "displayName": "Ethnicity",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.external_id",
+          "displayName": "External Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.gender",
+          "displayName": "Gender",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.is_proband",
+          "displayName": "Proband",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "boolean",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.kf_id",
+          "displayName": "Family Family Compositions Family Members Kf Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.outcome",
+          "displayName": "Family Family Compositions Family Members Outcome",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "object",
+          "primaryKey": false
+        },
+        {
+          "unit": "d",
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.outcome.age_at_event_days",
+          "displayName": "Age at Outcome",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "integer",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.outcome.disease_related",
+          "displayName": "Is Outcome Disease Related",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.outcome.external_id",
+          "displayName": "Family Family Compositions Family Members Outcome External Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.outcome.kf_id",
+          "displayName": "Family Family Compositions Family Members Outcome Kf Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.outcome.vital_status",
+          "displayName": "Vital Status",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.phenotype",
+          "displayName": "Family Family Compositions Family Members Phenotype",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "nested",
+          "primaryKey": false
+        },
+        {
+          "unit": "d",
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.phenotype.age_at_event_days",
+          "displayName": "Age at Phenotype Assignment",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "integer",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.phenotype.ancestral_hpo_ids",
+          "displayName": "Ancestral Phenotype IDs",
+          "active": false,
+          "isArray": true,
+          "rangeStep": 1,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.phenotype.external_id",
+          "displayName": "Family Family Compositions Family Members Phenotype External Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.phenotype.hpo_phenotype_not_observed",
+          "displayName": "Family Compositions Family Members Phenotype Hpo Phenotype Not Observed",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.phenotype.hpo_phenotype_observed",
+          "displayName": "Family Family Compositions Family Members Phenotype Hpo Phenotype Observed",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.phenotype.hpo_phenotype_observed_text",
+          "displayName": "Phenotype",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.phenotype.shared_hpo_ids",
+          "displayName": "Family Shared Phenotype (HPO)",
+          "active": false,
+          "isArray": true,
+          "rangeStep": 1,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.phenotype.snomed_phenotype_not_observed",
+          "displayName": "Family Family Compositions Family Members Phenotype Snomed Phenotype Not Observed",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.phenotype.snomed_phenotype_observed",
+          "displayName": "Family Family Compositions Family Members Phenotype Snomed Phenotype Observed",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.phenotype.source_text_phenotype",
+          "displayName": "Family Family Compositions Family Members Phenotype Source Text Phenotype",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.phenotype.observed",
+          "displayName": "Observed",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "boolean",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.race",
+          "displayName": "Family Family Compositions Family Members Race",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.family_members.relationship",
+          "displayName": "Family Family Compositions Family Members Relationship",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_compositions.shared_hpo_ids",
+          "displayName": "Family Shared Phenotype (HPO)",
+          "active": false,
+          "isArray": true,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.father_id",
+          "displayName": "Family Father Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.mother_id",
+          "displayName": "Family Mother Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family_id",
+          "displayName": "Family Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files",
+          "displayName": "Files",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "nested",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.access_urls",
+          "displayName": "Files Access Urls",
+          "active": false,
+          "isArray": true,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.acl",
+          "displayName": "Files Acl",
+          "active": false,
+          "isArray": true,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.availability",
+          "displayName": "Files Availability",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.controlled_access",
+          "displayName": "Files Controlled Access",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "boolean",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.created_at",
+          "displayName": "Files Created At",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "date",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.data_type",
+          "displayName": "Files Data Type",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.external_id",
+          "displayName": "Files External Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.file_format",
+          "displayName": "Files File Format",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.file_name",
+          "displayName": "Files File Name",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.is_harmonized",
+          "displayName": "Files Is Harmonized",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "boolean",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.kf_id",
+          "displayName": "Files Kf Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.latest_did",
+          "displayName": "Files Latest Did",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.modified_at",
+          "displayName": "Files Modified At",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "date",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.reference_genome",
+          "displayName": "Files Reference Genome",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.repository",
+          "displayName": "Files Repository",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments",
+          "displayName": "Files Sequencing Experiments",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "nested",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.experiment_date",
+          "displayName": "Files Sequencing Experiments Experiment Date",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.experiment_strategy",
+          "displayName": "Experiment Strategy",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.external_id",
+          "displayName": "Files Sequencing Experiments External Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.instrument_model",
+          "displayName": "Files Sequencing Experiments Instrument Model",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.is_paired_end",
+          "displayName": "Files Sequencing Experiments Is Paired End",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "boolean",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.kf_id",
+          "displayName": "Files Sequencing Experiments Kf Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.library_name",
+          "displayName": "Files Sequencing Experiments Library Name",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.library_strand",
+          "displayName": "Files Sequencing Experiments Library Strand",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.max_insert_size",
+          "displayName": "Files Sequencing Experiments Max Insert Size",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "integer",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.mean_depth",
+          "displayName": "Files Sequencing Experiments Mean Depth",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "float",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.mean_insert_size",
+          "displayName": "Files Sequencing Experiments Mean Insert Size",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "float",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.mean_read_length",
+          "displayName": "Files Sequencing Experiments Mean Read Length",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "float",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.platform",
+          "displayName": "Files Sequencing Experiments Platform",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.sequencing_center_id",
+          "displayName": "Files Sequencing Experiments Sequencing Center Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.sequencing_experiments.total_reads",
+          "displayName": "Files Sequencing Experiments Total Reads",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "integer",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "files.size",
+          "displayName": "Files Size",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "long",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "gender",
+          "displayName": "Gender",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "is_proband",
+          "displayName": "Proband",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "boolean",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "kf_id",
+          "displayName": "Kf Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "outcome",
+          "displayName": "Outcome",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "object",
+          "primaryKey": false
+        },
+        {
+          "unit": "d",
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "outcome.age_at_event_days",
+          "displayName": "Age at Outcome",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "integer",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "outcome.disease_related",
+          "displayName": "Is Outcome Disease Related",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "outcome.external_id",
+          "displayName": "Outcome External Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "outcome.kf_id",
+          "displayName": "Outcome Kf Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "outcome.participant_id",
+          "displayName": "Outcome Participant Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "outcome.vital_status",
+          "displayName": "Vital Status",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "phenotype",
+          "displayName": "Phenotype",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "nested",
+          "primaryKey": false
+        },
+        {
+          "unit": "d",
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "phenotype.age_at_event_days",
+          "displayName": "Age at Phenotype Assignment",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "integer",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "phenotype.ancestral_hpo_ids",
+          "displayName": "Ancestral Phenotype IDs",
+          "active": false,
+          "isArray": true,
+          "rangeStep": 1,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "phenotype.external_id",
+          "displayName": "Phenotype External Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "phenotype.hpo_phenotype_not_observed",
+          "displayName": "Not Observed Phenotype (HPO)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "phenotype.hpo_phenotype_observed",
+          "displayName": "Observed Phenotype (HPO)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "phenotype.hpo_phenotype_observed_text",
+          "displayName": "Phenotype",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "phenotype.snomed_phenotype_not_observed",
+          "displayName": "Phenotype Snomed Phenotype Not Observed",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "phenotype.snomed_phenotype_observed",
+          "displayName": "Phenotype Snomed Phenotype Observed",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "phenotype.source_text_phenotype",
+          "displayName": "Phenotype (Source Text)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "phenotype.observed",
+          "displayName": "Observed",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "boolean",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "race",
+          "displayName": "Race",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "study",
+          "displayName": "Study",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "object",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "study.attribution",
+          "displayName": "Attribution",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "text",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "study.data_access_authority",
+          "displayName": "Data Access Authority",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "study.external_id",
+          "displayName": "External Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "study.investigator_id",
+          "displayName": "Investigator Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "study.kf_id",
+          "displayName": "Study Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "study.name",
+          "displayName": "Study Name",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "study.release_status",
+          "displayName": "Release Status",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "study.short_name",
+          "displayName": "Study",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "study.version",
+          "displayName": "Version",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "family.family_id",
+          "displayName": "Family Family Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": 1,
+          "type": "id",
+          "primaryKey": false
+        }
+      ]
+    }
+  }
