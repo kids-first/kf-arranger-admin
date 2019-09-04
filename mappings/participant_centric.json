@@ -2,11 +2,11 @@
     "index": "participant_centric",
     "name": "participant",
     "esType": "participant_centric",
-    "timestamp": "2019-08-01T00:00:30.843Z",
+    "timestamp": "2019-08-27T00:00:30.843Z",
     "active": true,
     "config": {
       "aggs-state": {
-        "timestamp": "2019-08-01T00:00:30.843Z",
+        "timestamp": "2019-08-27T00:00:30.843Z",
         "state": [
           {
             "field": "alias_group",
@@ -118,6 +118,72 @@
           },
           {
             "field": "biospecimens__uberon_id_anatomical_site",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__diagnoses__age_at_event_days",
+            "show": false,
+            "active": true,
+            "type": "NumericAggregations"
+          },                
+          {
+            "field": "biospecimens__diagnoses__diagnosis_category",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__diagnoses__external_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__diagnoses__icd_id_diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__diagnoses__kf_id",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__diagnoses__mondo_id_diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__diagnoses__ncit_id_diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__diagnoses__source_text_diagnosis",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__diagnoses__source_text_tumor_location",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__diagnoses__spatial_descriptor",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },
+          {
+            "field": "biospecimens__diagnoses__uberon_id_tumor_location",
             "show": false,
             "active": true,
             "type": "Aggregations"
@@ -1116,6 +1182,138 @@
               "query": null,
               "show": false,
               "accessor": "biospecimens.hits.total",
+              "jsonPath": null,
+              "sortable": true,
+              "id": null,
+              "type": "number"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.diagnoses.age_at_event_days",
+              "query": "biospecimens { hits { edges { node { diagnoses { hits { edges { node { age_at_event_days } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.age_at_event_days",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.diagnoses.diagnosis_category",
+              "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { diagnosis_category } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.diagnoses.hits.edges[*].node.diagnosis_category",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.diagnoses.external_id",
+              "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { external_id } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.external_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.diagnoses.icd_id_diagnosis",
+              "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { icd_id_diagnosis } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.icd_id_diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.diagnoses.kf_id",
+              "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { kf_id } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.kf_id",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.diagnoses.mondo_id_diagnosis",
+              "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { mondo_id_diagnosis } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.mondo_id_diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.diagnoses.ncit_id_diagnosis",
+              "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { ncit_id_diagnosis } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.ncit_id_diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.diagnoses.source_text_diagnosis",
+              "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { source_text_diagnosis } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.source_text_diagnosis",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.diagnoses.source_text_tumor_location",
+              "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { source_text_tumor_location } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.source_text_tumor_location",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.diagnoses.spatial_descriptor",
+              "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { spatial_descriptor } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.spatial_descriptor",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": false,
+              "field": "biospecimens.diagnoses.uberon_id_tumor_location",
+              "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { uberon_id_tumor_location } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.uberon_id_tumor_location",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },
+            {
+              "canChangeShow": true,
+              "field": "biospecimens.diagnoses.hits.total",
+              "query": null,
+              "show": false,
+              "accessor": "biospecimens.hits.edges[0].node.diagnoses.hits.total",
               "jsonPath": null,
               "sortable": true,
               "id": null,
@@ -2564,7 +2762,7 @@
             }
           ]
         },
-        "timestamp": "2019-08-01T00:00:30.843Z"
+        "timestamp": "2019-08-27T00:00:30.843Z"
       },
       "matchbox-state": {
         "state": [
@@ -2639,7 +2837,7 @@
             "isActive": false
           }
         ],
-        "timestamp": "2019-08-01T00:00:30.843Z"
+        "timestamp": "2019-08-27T00:00:30.843Z"
       },
       "extended": [
         {
@@ -2954,6 +3152,150 @@
           "type": "nested",
           "primaryKey": false
         },
+        {
+          "unit": "d",
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.diagnoses.age_at_event_days",
+          "displayName": "Age at Histological Diagnosis",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "integer",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.diagnoses.diagnosis",
+          "displayName": "Histological Diagnosis",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.diagnoses.diagnosis_category",
+          "displayName": "Histological Diagnosis Category",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.diagnoses.external_id",
+          "displayName": "Histological Diagnoses External Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.diagnoses.icd_id_diagnosis",
+          "displayName": "Icd Id Histological Diagnosis",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.diagnoses.kf_id",
+          "displayName": "Histological Diagnoses Kf Id",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.diagnoses.mondo_id_diagnosis",
+          "displayName": "Histological Diagnosis (Mondo)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.diagnoses.ncit_id_diagnosis",
+          "displayName": "Histological Diagnosis (NCIT)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.diagnoses.source_text_diagnosis",
+          "displayName": "Histological Diagnosis (Source Text)",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.diagnoses.source_text_tumor_location",
+          "displayName": "Histological Tumor Location",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.diagnoses.spatial_descriptor",
+          "displayName": "Histological Diagnoses Spatial Descriptor",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "biospecimens.diagnoses.uberon_id_tumor_location",
+          "displayName": "Histological Diagnoses Uberon Id Tumor Location",
+          "active": false,
+          "isArray": false,
+          "rangeStep": null,
+          "type": "id",
+          "primaryKey": false
+        },            
         {
           "unit": "d",
           "displayValues": {},
