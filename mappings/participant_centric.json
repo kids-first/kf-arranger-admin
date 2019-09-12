@@ -3476,9 +3476,9 @@
           "field": "diagnoses.biospecimens",
           "displayName": "Diagnoses Biospecimens",
           "active": false,
-          "isArray": false,
+          "isArray": true,
           "rangeStep": null,
-          "type": "id",
+          "type": "keyword",
           "primaryKey": false
         },        
         {
