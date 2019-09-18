@@ -255,6 +255,12 @@
             "type": "Aggregations"
           },
           {
+            "field": "diagnoses__biospecimens",
+            "show": false,
+            "active": true,
+            "type": "Aggregations"
+          },          
+          {
             "field": "ethnicity",
             "show": false,
             "active": true,
@@ -1451,6 +1457,17 @@
               "id": null,
               "type": "number"
             },
+            {
+              "canChangeShow": false,
+              "field": "diagnoses.biospecimens",
+              "query": "diagnoses { hits { edges { node { biospecimens } } } }",
+              "show": false,
+              "accessor": null,
+              "jsonPath": "$.diagnoses.hits.edges[*].node.biospecimens",
+              "sortable": false,
+              "id": null,
+              "type": "list"
+            },            
             {
               "canChangeShow": true,
               "field": "ethnicity",
@@ -3452,6 +3469,18 @@
           "type": "keyword",
           "primaryKey": false
         },
+        {
+          "unit": null,
+          "displayValues": {},
+          "quickSearchEnabled": false,
+          "field": "diagnoses.biospecimens",
+          "displayName": "Diagnoses Biospecimens",
+          "active": false,
+          "isArray": true,
+          "rangeStep": null,
+          "type": "keyword",
+          "primaryKey": false
+        },        
         {
           "unit": null,
           "displayValues": {},
