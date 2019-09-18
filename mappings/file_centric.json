@@ -2295,7 +2295,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.age_at_event_days",
-              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { age_at_event_days } } } } } } } } } } } } } }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { age_at_event_days } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.age_at_event_days",
@@ -2306,7 +2306,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.ancestral_hpo_ids",
-              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { ancestral_hpo_ids } } } } } } } } } } } } } }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { ancestral_hpo_ids } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.ancestral_hpo_ids",
@@ -2317,7 +2317,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.external_id",
-              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { external_id } } } } } } } } } } } } } }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { external_id } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.external_id",
@@ -2328,7 +2328,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.hpo_phenotype_not_observed",
-              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hpo_phenotype_not_observed } } } } } } } } } } } } } }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_not_observed } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hpo_phenotype_not_observed",
@@ -2339,7 +2339,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.hpo_phenotype_observed",
-              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hpo_phenotype_observed } } } } } } } } } } } } } }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_observed } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hpo_phenotype_observed",
@@ -2350,7 +2350,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.hpo_phenotype_observed_text",
-              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hpo_phenotype_observed_text } } } } } } } } } } } } } }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_observed_text } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hpo_phenotype_observed_text",
@@ -2361,7 +2361,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.shared_hpo_ids",
-              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { shared_hpo_ids } } } } } } } } } } } } } }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { shared_hpo_ids } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.shared_hpo_ids",
@@ -2372,7 +2372,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.snomed_phenotype_not_observed",
-              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { snomed_phenotype_not_observed } } } } } } } } } } } } } }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { snomed_phenotype_not_observed } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.snomed_phenotype_not_observed",
@@ -2383,7 +2383,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.snomed_phenotype_observed",
-              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { snomed_phenotype_observed } } } } } } } } } } } } } }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { snomed_phenotype_observed } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.snomed_phenotype_observed",
@@ -2394,7 +2394,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.source_text_phenotype",
-              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { source_text_phenotype } } } } } } } } } } } } } }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { source_text_phenotype } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.source_text_phenotype",
@@ -2405,7 +2405,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.observed",
-              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { observed } } } } } } } } } } } } } }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { observed } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.observed",
@@ -2416,10 +2416,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.age_at_event_days",
-              "query": "participants { hits { edges { node { phenotype { age_at_event_days } } } } }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { age_at_event_days } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.age_at_event_days",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.age_at_event_days",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2427,10 +2427,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.ancestral_hpo_ids",
-              "query": "participants { hits { edges { node { phenotype { ancestral_hpo_ids } } } } }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { ancestral_hpo_ids } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.ancestral_hpo_ids",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.ancestral_hpo_ids",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2438,10 +2438,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.external_id",
-              "query": "participants { hits { edges { node { phenotype { external_id } } } } }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { external_id } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.external_id",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.external_id",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2449,10 +2449,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.hpo_phenotype_not_observed",
-              "query": "participants { hits { edges { node { phenotype { hpo_phenotype_not_observed } } } } }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_not_observed } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hpo_phenotype_not_observed",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.hpo_phenotype_not_observed",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2460,10 +2460,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.hpo_phenotype_observed",
-              "query": "participants { hits { edges { node { phenotype { hpo_phenotype_observed } } } } }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_observed } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hpo_phenotype_observed",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.hpo_phenotype_observed",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2471,10 +2471,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.hpo_phenotype_observed_text",
-              "query": "participants { hits { edges { node { phenotype { hpo_phenotype_observed_text } } } } }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_observed_text } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hpo_phenotype_observed_text",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.hpo_phenotype_observed_text",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2482,10 +2482,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.snomed_phenotype_not_observed",
-              "query": "participants { hits { edges { node { phenotype { snomed_phenotype_not_observed } } } } }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { snomed_phenotype_not_observed } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.snomed_phenotype_not_observed",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.snomed_phenotype_not_observed",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2493,10 +2493,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.snomed_phenotype_observed",
-              "query": "participants { hits { edges { node { phenotype { snomed_phenotype_observed } } } } }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { snomed_phenotype_observed } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.snomed_phenotype_observed",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.snomed_phenotype_observed",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2504,10 +2504,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.source_text_phenotype",
-              "query": "participants { hits { edges { node { phenotype { source_text_phenotype } } } } }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { source_text_phenotype } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.source_text_phenotype",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.source_text_phenotype",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2515,10 +2515,10 @@
             {
               "canChangeShow": true,
               "field": "participants.phenotype.observed",
-              "query": "participants { hits { edges { node { phenotype { observed } } } } }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { observed } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.observed",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.observed",
               "sortable": true,
               "id": null,
               "type": "list"
