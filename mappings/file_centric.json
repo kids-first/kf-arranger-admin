@@ -881,22 +881,6 @@
           "columns": [
             {
               "canChangeShow": true,
-              "field": "participants.family.family_compositions.family_members.phenotype.hits.total",
-              "show": false,
-              "accessor": "participants.hits.edges[0].node.family.family_compositions.hits.edges[0].node.family_members.hits.edges[0].node.phenotype.hits.total",
-              "sortable": true,
-              "type": "number"
-            },
-            {
-              "canChangeShow": true,
-              "field": "participants.phenotype.hits.total",
-              "show": false,
-              "accessor": "participants.hits.edges[0].node.phenotype.hits.total",
-              "sortable": true,
-              "type": "number"
-            },
-            {
-              "canChangeShow": true,
               "field": "kf_id",
               "query": null,
               "show": true,
