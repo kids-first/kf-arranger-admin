@@ -2,11 +2,11 @@
     "index": "participant_centric",
     "name": "participant",
     "esType": "participant_centric",
-    "timestamp": "2019-08-27T00:00:30.843Z",
+    "timestamp": "2019-09-18T00:00:00.000Z",
     "active": true,
     "config": {
       "aggs-state": {
-        "timestamp": "2019-08-27T00:00:30.843Z",
+        "timestamp": "2019-09-18T00:00:00.000Z",
         "state": [
           {
             "field": "alias_group",
@@ -957,22 +957,6 @@
             }
           ],
           "columns": [
-            {
-              "canChangeShow": true,
-              "field": "family.family_compositions.family_members.phenotype.hits.total",
-              "show": false,
-              "accessor": "family.family_compositions.hits.edges[0].node.family_members.hits.edges[0].node.phenotype.hits.total",
-              "sortable": true,
-              "type": "number"
-            },
-            {
-              "canChangeShow": true,
-              "field": "phenotype.hits.total",
-              "show": false,
-              "accessor": "phenotype.hits.total",
-              "sortable": true,
-              "type": "number"
-            },
             {
               "canChangeShow": true,
               "field": "alias_group",
@@ -2779,7 +2763,7 @@
             }
           ]
         },
-        "timestamp": "2019-08-27T00:00:30.843Z"
+        "timestamp": "2019-09-18T00:00:00.000Z"
       },
       "matchbox-state": {
         "state": [
@@ -2854,7 +2838,7 @@
             "isActive": false
           }
         ],
-        "timestamp": "2019-08-27T00:00:30.843Z"
+        "timestamp": "2019-09-18T00:00:00.000Z"
       },
       "extended": [
         {
