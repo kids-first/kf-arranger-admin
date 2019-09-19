@@ -2,11 +2,11 @@
     "index": "participant_centric",
     "name": "participant",
     "esType": "participant_centric",
-    "timestamp": "2019-08-27T00:00:30.843Z",
+    "timestamp": "2019-09-18T00:00:00.000Z",
     "active": true,
     "config": {
       "aggs-state": {
-        "timestamp": "2019-08-27T00:00:30.843Z",
+        "timestamp": "2019-09-18T00:00:00.000Z",
         "state": [
           {
             "field": "alias_group",
@@ -957,22 +957,6 @@
             }
           ],
           "columns": [
-            {
-              "canChangeShow": true,
-              "field": "family.family_compositions.family_members.phenotype.hits.total",
-              "show": false,
-              "accessor": "family.family_compositions.hits.edges[0].node.family_members.hits.edges[0].node.phenotype.hits.total",
-              "sortable": true,
-              "type": "number"
-            },
-            {
-              "canChangeShow": true,
-              "field": "phenotype.hits.total",
-              "show": false,
-              "accessor": "phenotype.hits.total",
-              "sortable": true,
-              "type": "number"
-            },
             {
               "canChangeShow": true,
               "field": "alias_group",
@@ -2516,10 +2500,10 @@
             {
               "canChangeShow": false,
               "field": "family.family_compositions.family_members.phenotype.age_at_event_days",
-              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { age_at_event_days } } } } } } } } } }",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { age_at_event_days } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.age_at_event_days",
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hits.edges[*].node.age_at_event_days",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2527,10 +2511,10 @@
             {
               "canChangeShow": false,
               "field": "family.family_compositions.family_members.phenotype.ancestral_hpo_ids",
-              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { ancestral_hpo_ids } } } } } } } } } }",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { ancestral_hpo_ids } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.ancestral_hpo_ids",
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hits.edges[*].node.ancestral_hpo_ids",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2538,10 +2522,10 @@
             {
               "canChangeShow": false,
               "field": "family.family_compositions.family_members.phenotype.external_id",
-              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { external_id } } } } } } } } } }",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { external_id } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.external_id",
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hits.edges[*].node.external_id",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2549,10 +2533,10 @@
             {
               "canChangeShow": false,
               "field": "family.family_compositions.family_members.phenotype.hpo_phenotype_not_observed",
-              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hpo_phenotype_not_observed } } } } } } } } } }",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_not_observed } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hpo_phenotype_not_observed",
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hits.edges[*].node.hpo_phenotype_not_observed",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2560,10 +2544,10 @@
             {
               "canChangeShow": false,
               "field": "family.family_compositions.family_members.phenotype.hpo_phenotype_observed",
-              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hpo_phenotype_observed } } } } } } } } } }",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_observed } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hpo_phenotype_observed",
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hits.edges[*].node.hpo_phenotype_observed",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2571,10 +2555,10 @@
             {
               "canChangeShow": false,
               "field": "family.family_compositions.family_members.phenotype.hpo_phenotype_observed_text",
-              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hpo_phenotype_observed_text } } } } } } } } } }",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_observed_text } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hpo_phenotype_observed_text",
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hits.edges[*].node.hpo_phenotype_observed_text",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2582,10 +2566,10 @@
             {
               "canChangeShow": false,
               "field": "family.family_compositions.family_members.phenotype.shared_hpo_ids",
-              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { shared_hpo_ids } } } } } } } } } }",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { shared_hpo_ids } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.shared_hpo_ids",
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hits.edges[*].node.shared_hpo_ids",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2593,10 +2577,10 @@
             {
               "canChangeShow": false,
               "field": "family.family_compositions.family_members.phenotype.snomed_phenotype_not_observed",
-              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { snomed_phenotype_not_observed } } } } } } } } } }",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { snomed_phenotype_not_observed } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.snomed_phenotype_not_observed",
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hits.edges[*].node.snomed_phenotype_not_observed",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2604,10 +2588,10 @@
             {
               "canChangeShow": false,
               "field": "family.family_compositions.family_members.phenotype.snomed_phenotype_observed",
-              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { snomed_phenotype_observed } } } } } } } } } }",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { snomed_phenotype_observed } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.snomed_phenotype_observed",
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hits.edges[*].node.snomed_phenotype_observed",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2615,10 +2599,10 @@
             {
               "canChangeShow": false,
               "field": "family.family_compositions.family_members.phenotype.source_text_phenotype",
-              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { source_text_phenotype } } } } } } } } } }",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { source_text_phenotype } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.source_text_phenotype",
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hits.edges[*].node.source_text_phenotype",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2626,10 +2610,10 @@
             {
               "canChangeShow": false,
               "field": "family.family_compositions.family_members.phenotype.observed",
-              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { observed } } } } } } } } } }",
+              "query": "family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { observed } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.observed",
+              "jsonPath": "$.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hits.edges[*].node.observed",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2637,10 +2621,10 @@
             {
               "canChangeShow": true,
               "field": "phenotype.age_at_event_days",
-              "query": null,
+              "query": "phenotype { hits { edges { node { age_at_event_days } } } }",
               "show": false,
               "accessor": "phenotype.age_at_event_days",
-              "jsonPath": null,
+              "jsonPath": "$.phenotype.hits.edges[*].node.age_at_event_days",
               "sortable": true,
               "id": null,
               "type": "number"
@@ -2648,10 +2632,10 @@
             {
               "canChangeShow": true,
               "field": "phenotype.ancestral_hpo_ids",
-              "query": null,
+              "query": "phenotype { hits { edges { node { ancestral_hpo_ids } } } }",
               "show": false,
               "accessor": "phenotype.ancestral_hpo_ids",
-              "jsonPath": null,
+              "jsonPath": "$.phenotype.hits.edges[*].node.ancestral_hpo_ids",
               "sortable": true,
               "id": null,
               "type": "string"
@@ -2659,10 +2643,10 @@
             {
               "canChangeShow": true,
               "field": "phenotype.external_id",
-              "query": null,
+              "query": "phenotype { hits { edges { node { external_id } } } }",
               "show": false,
               "accessor": "phenotype.external_id",
-              "jsonPath": null,
+              "jsonPath": "$.phenotype.hits.edges[*].node.external_id",
               "sortable": true,
               "id": null,
               "type": "string"
@@ -2670,10 +2654,10 @@
             {
               "canChangeShow": true,
               "field": "phenotype.hpo_phenotype_not_observed",
-              "query": null,
+              "query": "phenotype { hits { edges { node { hpo_phenotype_not_observed } } } }",
               "show": false,
               "accessor": "phenotype.hpo_phenotype_not_observed",
-              "jsonPath": null,
+              "jsonPath": "$.phenotype.hits.edges[*].node.hpo_phenotype_not_observed",
               "sortable": true,
               "id": null,
               "type": "string"
@@ -2681,10 +2665,10 @@
             {
               "canChangeShow": true,
               "field": "phenotype.hpo_phenotype_observed",
-              "query": null,
+              "query": "phenotype { hits { edges { node { hpo_phenotype_observed } } } }",
               "show": false,
               "accessor": "phenotype.hpo_phenotype_observed",
-              "jsonPath": null,
+              "jsonPath": "$.phenotype.hits.edges[*].node.hpo_phenotype_observed",
               "sortable": true,
               "id": null,
               "type": "string"
@@ -2692,10 +2676,10 @@
             {
               "canChangeShow": true,
               "field": "phenotype.hpo_phenotype_observed_text",
-              "query": null,
+              "query": "phenotype { hits { edges { node { hpo_phenotype_observed_text } } } }",
               "show": false,
               "accessor": "phenotype.hpo_phenotype_observed_text",
-              "jsonPath": null,
+              "jsonPath": "$.phenotype.hits.edges[*].node.hpo_phenotype_observed_text",
               "sortable": true,
               "id": null,
               "type": "string"
@@ -2703,10 +2687,10 @@
             {
               "canChangeShow": true,
               "field": "phenotype.snomed_phenotype_not_observed",
-              "query": null,
+              "query": "phenotype { hits { edges { node { snomed_phenotype_not_observed } } } }",
               "show": false,
               "accessor": "phenotype.snomed_phenotype_not_observed",
-              "jsonPath": null,
+              "jsonPath": "$.phenotype.hits.edges[*].node.snomed_phenotype_not_observed",
               "sortable": true,
               "id": null,
               "type": "string"
@@ -2714,10 +2698,10 @@
             {
               "canChangeShow": true,
               "field": "phenotype.snomed_phenotype_observed",
-              "query": null,
+              "query": "phenotype { hits { edges { node { snomed_phenotype_observed } } } }",
               "show": false,
               "accessor": "phenotype.snomed_phenotype_observed",
-              "jsonPath": null,
+              "jsonPath": "$.phenotype.hits.edges[*].node.snomed_phenotype_observed",
               "sortable": true,
               "id": null,
               "type": "string"
@@ -2725,10 +2709,10 @@
             {
               "canChangeShow": true,
               "field": "phenotype.source_text_phenotype",
-              "query": null,
+              "query": "phenotype { hits { edges { node { source_text_phenotype } } } }",
               "show": false,
               "accessor": "phenotype.source_text_phenotype",
-              "jsonPath": null,
+              "jsonPath": "$.phenotype.hits.edges[*].node.source_text_phenotype",
               "sortable": true,
               "id": null,
               "type": "string"
@@ -2736,10 +2720,10 @@
             {
               "canChangeShow": true,
               "field": "phenotype.observed",
-              "query": null,
+              "query": "phenotype { hits { edges { node { observed } } } }",
               "show": false,
               "accessor": "phenotype.observed",
-              "jsonPath": null,
+              "jsonPath": "$.phenotype.hits.edges[*].node.observed",
               "sortable": true,
               "id": null,
               "type": "boolean"
@@ -2779,7 +2763,7 @@
             }
           ]
         },
-        "timestamp": "2019-08-27T00:00:30.843Z"
+        "timestamp": "2019-09-18T00:00:00.000Z"
       },
       "matchbox-state": {
         "state": [
@@ -2814,14 +2798,14 @@
           {
             "keyField": null,
             "field": "family.family_compositions.family_members",
-            "displayName": "Family Family Compositions Family Members",
+            "displayName": "Family Members",
             "searchFields": [],
             "isActive": false
           },
           {
             "keyField": null,
             "field": "family.family_compositions.family_members.diagnoses",
-            "displayName": "Family Family Compositions Family Members Diagnoses",
+            "displayName": "Family Members Diagnoses",
             "searchFields": [],
             "isActive": false
           },
@@ -2842,7 +2826,7 @@
           {
             "keyField": null,
             "field": "family.family_compositions.family_members.phenotype",
-            "displayName": "Family Family Compositions Family Members Phenotype",
+            "displayName": "Family Members Phenotype",
             "searchFields": [],
             "isActive": false
           },
@@ -2854,7 +2838,7 @@
             "isActive": false
           }
         ],
-        "timestamp": "2019-08-27T00:00:30.843Z"
+        "timestamp": "2019-09-18T00:00:00.000Z"
       },
       "extended": [
         {
@@ -3678,7 +3662,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.diagnoses.kf_id",
-          "displayName": "Family Family Compositions Family Members Diagnoses Kf Id",
+          "displayName": "Family Members Diagnoses Kf Id",
           "active": false,
           "isArray": false,
           "rangeStep": null,
@@ -3750,7 +3734,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.diagnoses.uberon_id_tumor_location",
-          "displayName": "Family Family Compositions Family Members Diagnoses Uberon Id Tumor Location",
+          "displayName": "Family Members Diagnoses Uberon Id Tumor Location",
           "active": false,
           "isArray": false,
           "rangeStep": null,
@@ -3822,7 +3806,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.kf_id",
-          "displayName": "Family Family Compositions Family Members Kf Id",
+          "displayName": "Family Members Kf Id",
           "active": false,
           "isArray": false,
           "rangeStep": null,
@@ -3834,7 +3818,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.outcome",
-          "displayName": "Family Family Compositions Family Members Outcome",
+          "displayName": "Family Members Outcome",
           "active": false,
           "isArray": false,
           "rangeStep": null,
@@ -3870,7 +3854,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.outcome.external_id",
-          "displayName": "Family Family Compositions Family Members Outcome External Id",
+          "displayName": "Family Members Outcome External Id",
           "active": false,
           "isArray": false,
           "rangeStep": null,
@@ -3882,7 +3866,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.outcome.kf_id",
-          "displayName": "Family Family Compositions Family Members Outcome Kf Id",
+          "displayName": "Family Members Outcome Kf Id",
           "active": false,
           "isArray": false,
           "rangeStep": null,
@@ -3906,7 +3890,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.phenotype",
-          "displayName": "Family Family Compositions Family Members Phenotype",
+          "displayName": "Family Members Phenotype",
           "active": false,
           "isArray": false,
           "rangeStep": null,
@@ -3942,7 +3926,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.phenotype.external_id",
-          "displayName": "Family Family Compositions Family Members Phenotype External Id",
+          "displayName": "Family Members Phenotype External Id",
           "active": false,
           "isArray": false,
           "rangeStep": 1,
@@ -3966,7 +3950,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.phenotype.hpo_phenotype_observed",
-          "displayName": "Family Family Compositions Family Members Phenotype Hpo Phenotype Observed",
+          "displayName": "Family Members Phenotype Hpo Phenotype Observed",
           "active": false,
           "isArray": false,
           "rangeStep": 1,
@@ -4002,7 +3986,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.phenotype.snomed_phenotype_not_observed",
-          "displayName": "Family Family Compositions Family Members Phenotype Snomed Phenotype Not Observed",
+          "displayName": "Family Members Phenotype Snomed Phenotype Not Observed",
           "active": false,
           "isArray": false,
           "rangeStep": 1,
@@ -4014,7 +3998,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.phenotype.snomed_phenotype_observed",
-          "displayName": "Family Family Compositions Family Members Phenotype Snomed Phenotype Observed",
+          "displayName": "Family Members Phenotype Snomed Phenotype Observed",
           "active": false,
           "isArray": false,
           "rangeStep": 1,
@@ -4026,7 +4010,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.phenotype.source_text_phenotype",
-          "displayName": "Family Family Compositions Family Members Phenotype Source Text Phenotype",
+          "displayName": "Family Members Phenotype Source Text Phenotype",
           "active": false,
           "isArray": false,
           "rangeStep": 1,
@@ -4050,7 +4034,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.race",
-          "displayName": "Family Family Compositions Family Members Race",
+          "displayName": "Family Members Race",
           "active": false,
           "isArray": false,
           "rangeStep": null,
@@ -4062,7 +4046,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "family.family_compositions.family_members.relationship",
-          "displayName": "Family Family Compositions Family Members Relationship",
+          "displayName": "Family Members Relationship",
           "active": false,
           "isArray": false,
           "rangeStep": null,

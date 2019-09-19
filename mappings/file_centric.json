@@ -2,11 +2,11 @@
     "index": "file_centric",
     "name": "file",
     "esType": "file_centric",
-    "timestamp": "2019-07-30T18:35:29.962Z",
+    "timestamp": "2019-09-18T00:00:00.000Z",
     "active": true,
     "config": {
       "aggs-state": {
-        "timestamp": "2019-07-30T18:35:30.943Z",
+        "timestamp": "2019-09-18T00:00:00.000Z",
         "state": [
           {
             "field": "participants__study__short_name",
@@ -881,22 +881,6 @@
           "columns": [
             {
               "canChangeShow": true,
-              "field": "participants.family.family_compositions.family_members.phenotype.hits.total",
-              "show": false,
-              "accessor": "participants.hits.edges[0].node.family.family_compositions.hits.edges[0].node.family_members.hits.edges[0].node.phenotype.hits.total",
-              "sortable": true,
-              "type": "number"
-            },
-            {
-              "canChangeShow": true,
-              "field": "participants.phenotype.hits.total",
-              "show": false,
-              "accessor": "participants.hits.edges[0].node.phenotype.hits.total",
-              "sortable": true,
-              "type": "number"
-            },
-            {
-              "canChangeShow": true,
               "field": "kf_id",
               "query": null,
               "show": true,
@@ -909,7 +893,7 @@
             {
               "canChangeShow": true,
               "field": "participants.kf_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                kf_id\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { kf_id } } } }",
               "show": true,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.kf_id",
@@ -920,7 +904,7 @@
             {
               "canChangeShow": true,
               "field": "participants.study.short_name",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                study {\n                short_name\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { study { short_name } } } } }",
               "show": true,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.study.short_name",
@@ -931,7 +915,7 @@
             {
               "canChangeShow": true,
               "field": "participants.is_proband",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                is_proband\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { is_proband } } } }",
               "show": true,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.is_proband",
@@ -942,7 +926,7 @@
             {
               "canChangeShow": true,
               "field": "participants.family_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family_id\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family_id } } } }",
               "show": true,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family_id",
@@ -997,7 +981,7 @@
             {
               "canChangeShow": true,
               "field": "participants.external_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                external_id\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { external_id } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.external_id",
@@ -1008,7 +992,7 @@
             {
               "canChangeShow": false,
               "field": "participants.study.name",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                study {\n                name\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { study { name } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.study.name",
@@ -1019,7 +1003,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_id\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_id } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_id",
@@ -1041,7 +1025,7 @@
             {
               "canChangeShow": false,
               "field": "participants.study.external_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                study {\n                external_id\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { study { external_id } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.study.external_id",
@@ -1107,7 +1091,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.age_at_event_days",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                age_at_event_days\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { age_at_event_days } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.age_at_event_days",
@@ -1118,7 +1102,7 @@
             {
               "canChangeShow": false,
               "field": "participants.alias_group",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                alias_group\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { alias_group } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.alias_group",
@@ -1129,7 +1113,7 @@
             {
               "canChangeShow": false,
               "field": "participants.available_data_types",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                available_data_types\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { available_data_types } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.available_data_types",
@@ -1140,7 +1124,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.analyte_type",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                analyte_type\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { analyte_type } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.analyte_type",
@@ -1151,7 +1135,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.composition",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                composition\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { composition } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.composition",
@@ -1162,7 +1146,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.concentration_mg_per_ml",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                concentration_mg_per_ml\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { concentration_mg_per_ml } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.concentration_mg_per_ml",
@@ -1173,7 +1157,7 @@
             {
               "canChangeShow": true,
               "field": "participants.biospecimens.external_aliquot_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                external_aliquot_id\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { external_aliquot_id } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.external_aliquot_id",
@@ -1184,7 +1168,7 @@
             {
               "canChangeShow": true,
               "field": "participants.biospecimens.external_sample_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                external_sample_id\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { external_sample_id } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.external_sample_id",
@@ -1195,7 +1179,7 @@
             {
               "canChangeShow": true,
               "field": "participants.biospecimens.kf_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                kf_id\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { kf_id } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.kf_id",
@@ -1206,7 +1190,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.ncit_id_anatomical_site",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                ncit_id_anatomical_site\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { ncit_id_anatomical_site } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.ncit_id_anatomical_site",
@@ -1217,7 +1201,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.ncit_id_tissue_type",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                ncit_id_tissue_type\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { ncit_id_tissue_type } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.ncit_id_tissue_type",
@@ -1228,7 +1212,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.sequencing_center_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                sequencing_center_id\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { sequencing_center_id } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.sequencing_center_id",
@@ -1239,7 +1223,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.shipment_date",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                shipment_date\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { shipment_date } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.shipment_date",
@@ -1250,7 +1234,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.source_text_anatomical_site",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                source_text_anatomical_site\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { source_text_anatomical_site } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.source_text_anatomical_site",
@@ -1261,7 +1245,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.shipment_origin",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                shipment_origin\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { shipment_origin } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.shipment_origin",
@@ -1272,7 +1256,7 @@
             {
               "canChangeShow": true,
               "field": "participants.biospecimens.source_text_tissue_type",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                source_text_tissue_type\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { source_text_tissue_type } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.source_text_tissue_type",
@@ -1283,7 +1267,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.source_text_tumor_descriptor",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                source_text_tumor_descriptor\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { source_text_tumor_descriptor } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.source_text_tumor_descriptor",
@@ -1294,7 +1278,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.uberon_id_anatomical_site",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                uberon_id_anatomical_site\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { uberon_id_anatomical_site } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.uberon_id_anatomical_site",
@@ -1305,7 +1289,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.spatial_descriptor",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                spatial_descriptor\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { spatial_descriptor } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.spatial_descriptor",
@@ -1327,7 +1311,7 @@
             {
               "canChangeShow": false,
               "field": "participants.diagnoses.age_at_event_days",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                age_at_event_days\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { diagnoses { hits { edges { node { age_at_event_days } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.diagnoses.hits.edges[*].node.age_at_event_days",
@@ -1338,7 +1322,7 @@
             {
               "canChangeShow": false,
               "field": "participants.diagnoses.diagnosis_category",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                diagnosis_category\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { diagnoses { hits { edges { node { diagnosis_category } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.diagnoses.hits.edges[*].node.diagnosis_category",
@@ -1349,7 +1333,7 @@
             {
               "canChangeShow": false,
               "field": "participants.diagnoses.external_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                external_id\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { diagnoses { hits { edges { node { external_id } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.diagnoses.hits.edges[*].node.external_id",
@@ -1360,7 +1344,7 @@
             {
               "canChangeShow": false,
               "field": "participants.diagnoses.icd_id_diagnosis",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                icd_id_diagnosis\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { diagnoses { hits { edges { node { icd_id_diagnosis } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.diagnoses.hits.edges[*].node.icd_id_diagnosis",
@@ -1371,7 +1355,7 @@
             {
               "canChangeShow": false,
               "field": "participants.diagnoses.kf_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                kf_id\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { diagnoses { hits { edges { node { kf_id } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.diagnoses.hits.edges[*].node.kf_id",
@@ -1382,7 +1366,7 @@
             {
               "canChangeShow": false,
               "field": "participants.diagnoses.mondo_id_diagnosis",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                mondo_id_diagnosis\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { diagnoses { hits { edges { node { mondo_id_diagnosis } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.diagnoses.hits.edges[*].node.mondo_id_diagnosis",
@@ -1393,7 +1377,7 @@
             {
               "canChangeShow": false,
               "field": "participants.diagnoses.ncit_id_diagnosis",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                ncit_id_diagnosis\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { diagnoses { hits { edges { node { ncit_id_diagnosis } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.diagnoses.hits.edges[*].node.ncit_id_diagnosis",
@@ -1404,7 +1388,7 @@
             {
               "canChangeShow": true,
               "field": "participants.diagnoses.source_text_diagnosis",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                source_text_diagnosis\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { diagnoses { hits { edges { node { source_text_diagnosis } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.diagnoses.hits.edges[*].node.source_text_diagnosis",
@@ -1415,7 +1399,7 @@
             {
               "canChangeShow": false,
               "field": "participants.diagnoses.spatial_descriptor",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                spatial_descriptor\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { diagnoses { hits { edges { node { spatial_descriptor } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.diagnoses.hits.edges[*].node.spatial_descriptor",
@@ -1426,7 +1410,7 @@
             {
               "canChangeShow": false,
               "field": "participants.diagnoses.source_text_tumor_location",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                source_text_tumor_location\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { diagnoses { hits { edges { node { source_text_tumor_location } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.diagnoses.hits.edges[*].node.source_text_tumor_location",
@@ -1448,7 +1432,7 @@
             {
               "canChangeShow": false,
               "field": "participants.diagnoses.uberon_id_tumor_location",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                uberon_id_tumor_location\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { diagnoses { hits { edges { node { uberon_id_tumor_location } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.diagnoses.hits.edges[*].node.uberon_id_tumor_location",
@@ -1459,7 +1443,7 @@
             {
               "canChangeShow": false,
               "field": "participants.ethnicity",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                ethnicity\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { ethnicity } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.ethnicity",
@@ -1470,7 +1454,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.available_data_types",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                available_data_types\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { available_data_types } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.available_data_types",
@@ -1481,7 +1465,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.composition",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                composition\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { composition } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.composition",
@@ -1492,7 +1476,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.alias_group",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                alias_group\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { alias_group } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.alias_group",
@@ -1503,7 +1487,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.available_data_types",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                available_data_types\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { available_data_types } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.available_data_types",
@@ -1514,7 +1498,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.diagnoses.age_at_event_days",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                age_at_event_days\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { age_at_event_days } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.age_at_event_days",
@@ -1525,7 +1509,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.diagnoses.external_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                external_id\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { external_id } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.external_id",
@@ -1536,7 +1520,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.diagnoses.diagnosis_category",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                diagnosis_category\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { diagnosis_category } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.diagnosis_category",
@@ -1547,7 +1531,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.diagnoses.icd_id_diagnosis",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                icd_id_diagnosis\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { icd_id_diagnosis } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.icd_id_diagnosis",
@@ -1558,7 +1542,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.diagnoses.kf_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                kf_id\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { kf_id } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.kf_id",
@@ -1569,7 +1553,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.diagnoses.mondo_id_diagnosis",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                mondo_id_diagnosis\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { mondo_id_diagnosis } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.mondo_id_diagnosis",
@@ -1580,7 +1564,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.diagnoses.ncit_id_diagnosis",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                ncit_id_diagnosis\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { ncit_id_diagnosis } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.ncit_id_diagnosis",
@@ -1591,7 +1575,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.diagnoses.source_text_diagnosis",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                source_text_diagnosis\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { source_text_diagnosis } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.source_text_diagnosis",
@@ -1602,7 +1586,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.diagnoses.source_text_tumor_location",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                source_text_tumor_location\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { source_text_tumor_location } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.source_text_tumor_location",
@@ -1613,7 +1597,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.diagnoses.uberon_id_tumor_location",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                uberon_id_tumor_location\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { uberon_id_tumor_location } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.uberon_id_tumor_location",
@@ -1624,7 +1608,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.diagnoses.spatial_descriptor",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                spatial_descriptor\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { spatial_descriptor } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.spatial_descriptor",
@@ -1635,7 +1619,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.ethnicity",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                ethnicity\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { ethnicity } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.ethnicity",
@@ -1657,7 +1641,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.external_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                external_id\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { external_id } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.external_id",
@@ -1668,7 +1652,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.gender",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                gender\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { gender } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.gender",
@@ -1679,7 +1663,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.is_proband",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                is_proband\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { is_proband } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.is_proband",
@@ -1690,7 +1674,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.kf_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                kf_id\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { kf_id } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.kf_id",
@@ -1701,7 +1685,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.outcome.age_at_event_days",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                outcome {\n                age_at_event_days\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { outcome { age_at_event_days } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.outcome.age_at_event_days",
@@ -1712,7 +1696,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.outcome.disease_related",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                outcome {\n                disease_related\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { outcome { disease_related } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.outcome.disease_related",
@@ -1723,7 +1707,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.outcome.external_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                outcome {\n                external_id\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { outcome { external_id } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.outcome.external_id",
@@ -1734,7 +1718,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.outcome.kf_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                outcome {\n                kf_id\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { outcome { kf_id } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.outcome.kf_id",
@@ -1745,7 +1729,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.outcome.vital_status",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                outcome {\n                vital_status\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { outcome { vital_status } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.outcome.vital_status",
@@ -1756,7 +1740,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.relationship",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                relationship\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { relationship } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.relationship",
@@ -1767,7 +1751,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.race",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                race\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { race } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.race",
@@ -1789,7 +1773,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.shared_hpo_ids",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                shared_hpo_ids\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { shared_hpo_ids } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.shared_hpo_ids",
@@ -1811,7 +1795,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.father_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                father_id\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { father_id } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.father_id",
@@ -1822,7 +1806,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.mother_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                mother_id\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { mother_id } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.mother_id",
@@ -1833,7 +1817,7 @@
             {
               "canChangeShow": false,
               "field": "participants.gender",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                gender\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { gender } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.gender",
@@ -1844,7 +1828,7 @@
             {
               "canChangeShow": false,
               "field": "participants.outcome.age_at_event_days",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                outcome {\n                age_at_event_days\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { outcome { age_at_event_days } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.outcome.age_at_event_days",
@@ -1855,7 +1839,7 @@
             {
               "canChangeShow": false,
               "field": "participants.outcome.disease_related",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                outcome {\n                disease_related\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { outcome { disease_related } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.outcome.disease_related",
@@ -1866,7 +1850,7 @@
             {
               "canChangeShow": false,
               "field": "participants.outcome.external_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                outcome {\n                external_id\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { outcome { external_id } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.outcome.external_id",
@@ -1877,7 +1861,7 @@
             {
               "canChangeShow": false,
               "field": "participants.outcome.kf_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                outcome {\n                kf_id\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { outcome { kf_id } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.outcome.kf_id",
@@ -1888,7 +1872,7 @@
             {
               "canChangeShow": false,
               "field": "participants.outcome.vital_status",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                outcome {\n                vital_status\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { outcome { vital_status } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.outcome.vital_status",
@@ -1899,7 +1883,7 @@
             {
               "canChangeShow": false,
               "field": "participants.race",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                race\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { race } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.race",
@@ -1910,7 +1894,7 @@
             {
               "canChangeShow": false,
               "field": "participants.study.attribution",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                study {\n                attribution\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { study { attribution } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.study.attribution",
@@ -1921,7 +1905,7 @@
             {
               "canChangeShow": false,
               "field": "participants.study.data_access_authority",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                study {\n                data_access_authority\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { study { data_access_authority } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.study.data_access_authority",
@@ -1932,7 +1916,7 @@
             {
               "canChangeShow": false,
               "field": "participants.study.investigator_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                study {\n                investigator_id\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { study { investigator_id } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.study.investigator_id",
@@ -1943,7 +1927,7 @@
             {
               "canChangeShow": true,
               "field": "participants.study.kf_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                study {\n                kf_id\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { study { kf_id } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.study.kf_id",
@@ -1954,7 +1938,7 @@
             {
               "canChangeShow": false,
               "field": "participants.study.release_status",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                study {\n                release_status\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { study { release_status } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.study.release_status",
@@ -1965,7 +1949,7 @@
             {
               "canChangeShow": false,
               "field": "participants.study.version",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                study {\n                version\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { study { version } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.study.version",
@@ -1998,7 +1982,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.experiment_date",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                experiment_date\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { experiment_date } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.experiment_date",
@@ -2009,7 +1993,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.experiment_strategy",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                experiment_strategy\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { experiment_strategy } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.experiment_strategy",
@@ -2020,7 +2004,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.external_id",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                external_id\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { external_id } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.external_id",
@@ -2031,7 +2015,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.instrument_model",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                instrument_model\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { instrument_model } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.instrument_model",
@@ -2042,7 +2026,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.is_paired_end",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                is_paired_end\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { is_paired_end } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.is_paired_end",
@@ -2053,7 +2037,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.kf_id",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                kf_id\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { kf_id } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.kf_id",
@@ -2064,7 +2048,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.library_name",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                library_name\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { library_name } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.library_name",
@@ -2075,7 +2059,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.library_strand",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                library_strand\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { library_strand } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.library_strand",
@@ -2086,7 +2070,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.max_insert_size",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                max_insert_size\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { max_insert_size } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.max_insert_size",
@@ -2097,7 +2081,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.mean_depth",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                mean_depth\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { mean_depth } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.mean_depth",
@@ -2108,7 +2092,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.mean_insert_size",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                mean_insert_size\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { mean_insert_size } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.mean_insert_size",
@@ -2119,7 +2103,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.mean_read_length",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                mean_read_length\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { mean_read_length } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.mean_read_length",
@@ -2130,7 +2114,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.platform",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                platform\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { platform } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.platform",
@@ -2141,7 +2125,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.sequencing_center_id",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                sequencing_center_id\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { sequencing_center_id } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.sequencing_center_id",
@@ -2152,7 +2136,7 @@
             {
               "canChangeShow": false,
               "field": "sequencing_experiments.total_reads",
-              "query": "sequencing_experiments {\n                hits {\n                edges {\n                node {\n                total_reads\n              }\n              }\n              }\n              }",
+              "query": "sequencing_experiments { hits { edges { node { total_reads } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.sequencing_experiments.hits.edges[*].node.total_reads",
@@ -2196,7 +2180,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.dbgap_consent_code",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                dbgap_consent_code\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { dbgap_consent_code } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.dbgap_consent_code",
@@ -2207,7 +2191,7 @@
             {
               "canChangeShow": false,
               "field": "participants.diagnoses.diagnosis",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                diagnosis\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { diagnoses { hits { edges { node { diagnosis } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.diagnoses.hits.edges[*].node.diagnosis",
@@ -2218,7 +2202,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.diagnoses.diagnosis",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                diagnoses {\n                hits {\n                edges {\n                node {\n                diagnosis\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnoses { hits { edges { node { diagnosis } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnoses.hits.edges[*].node.diagnosis",
@@ -2229,7 +2213,7 @@
             {
               "canChangeShow": false,
               "field": "participants.diagnosis_category",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                diagnosis_category\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { diagnosis_category } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.diagnosis_category",
@@ -2240,7 +2224,7 @@
             {
               "canChangeShow": false,
               "field": "participants.affected_status",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                affected_status\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { affected_status } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.affected_status",
@@ -2251,7 +2235,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.volume_ul",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                volume_ul\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { volume_ul } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.volume_ul",
@@ -2262,7 +2246,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.affected_status",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                affected_status\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { affected_status } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.affected_status",
@@ -2273,7 +2257,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.diagnosis_category",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                diagnosis_category\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { diagnosis_category } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.diagnosis_category",
@@ -2284,7 +2268,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.consent_type",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                consent_type\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { consent_type } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.consent_type",
@@ -2295,7 +2279,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.age_at_event_days",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                phenotype {\n                age_at_event_days\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { age_at_event_days } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.age_at_event_days",
@@ -2306,7 +2290,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.ancestral_hpo_ids",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                phenotype {\n                ancestral_hpo_ids\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { ancestral_hpo_ids } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.ancestral_hpo_ids",
@@ -2317,7 +2301,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.external_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                phenotype {\n                external_id\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { external_id } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.external_id",
@@ -2328,7 +2312,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.hpo_phenotype_not_observed",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                phenotype {\n                hpo_phenotype_not_observed\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_not_observed } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hpo_phenotype_not_observed",
@@ -2339,7 +2323,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.hpo_phenotype_observed",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                phenotype {\n                hpo_phenotype_observed\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_observed } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hpo_phenotype_observed",
@@ -2350,7 +2334,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.hpo_phenotype_observed_text",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                phenotype {\n                hpo_phenotype_observed_text\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_observed_text } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.hpo_phenotype_observed_text",
@@ -2361,7 +2345,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.shared_hpo_ids",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                phenotype {\n                shared_hpo_ids\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { shared_hpo_ids } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.shared_hpo_ids",
@@ -2372,7 +2356,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.snomed_phenotype_not_observed",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                phenotype {\n                snomed_phenotype_not_observed\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { snomed_phenotype_not_observed } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.snomed_phenotype_not_observed",
@@ -2383,7 +2367,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.snomed_phenotype_observed",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                phenotype {\n                snomed_phenotype_observed\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { snomed_phenotype_observed } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.snomed_phenotype_observed",
@@ -2394,7 +2378,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.source_text_phenotype",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                phenotype {\n                source_text_phenotype\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { source_text_phenotype } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.source_text_phenotype",
@@ -2405,7 +2389,7 @@
             {
               "canChangeShow": false,
               "field": "participants.family.family_compositions.family_members.phenotype.observed",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                family {\n                family_compositions {\n                hits {\n                edges {\n                node {\n                family_members {\n                hits {\n                edges {\n                node {\n                phenotype {\n                observed\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { family { family_compositions { hits { edges { node { family_members { hits { edges { node { phenotype { hits { edges { node { observed } } } } } } } } } } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.family.family_compositions.hits.edges[*].node.family_members.hits.edges[*].node.phenotype.observed",
@@ -2416,10 +2400,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.age_at_event_days",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                phenotype {\n                age_at_event_days\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { age_at_event_days } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.age_at_event_days",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.age_at_event_days",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2427,10 +2411,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.ancestral_hpo_ids",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                phenotype {\n                ancestral_hpo_ids\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { ancestral_hpo_ids } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.ancestral_hpo_ids",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.ancestral_hpo_ids",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2438,10 +2422,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.external_id",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                phenotype {\n                external_id\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { external_id } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.external_id",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.external_id",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2449,10 +2433,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.hpo_phenotype_not_observed",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                phenotype {\n                hpo_phenotype_not_observed\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_not_observed } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hpo_phenotype_not_observed",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.hpo_phenotype_not_observed",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2460,10 +2444,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.hpo_phenotype_observed",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                phenotype {\n                hpo_phenotype_observed\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_observed } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hpo_phenotype_observed",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.hpo_phenotype_observed",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2471,10 +2455,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.hpo_phenotype_observed_text",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                phenotype {\n                hpo_phenotype_observed_text\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { hpo_phenotype_observed_text } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hpo_phenotype_observed_text",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.hpo_phenotype_observed_text",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2482,10 +2466,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.snomed_phenotype_not_observed",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                phenotype {\n                snomed_phenotype_not_observed\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { snomed_phenotype_not_observed } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.snomed_phenotype_not_observed",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.snomed_phenotype_not_observed",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2493,10 +2477,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.snomed_phenotype_observed",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                phenotype {\n                snomed_phenotype_observed\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { snomed_phenotype_observed } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.snomed_phenotype_observed",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.snomed_phenotype_observed",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2504,10 +2488,10 @@
             {
               "canChangeShow": false,
               "field": "participants.phenotype.source_text_phenotype",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                phenotype {\n                source_text_phenotype\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { source_text_phenotype } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.source_text_phenotype",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.source_text_phenotype",
               "sortable": false,
               "id": null,
               "type": "list"
@@ -2515,10 +2499,10 @@
             {
               "canChangeShow": true,
               "field": "participants.phenotype.observed",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                phenotype {\n                observed\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { phenotype { hits { edges { node { observed } } } } } } } }",
               "show": false,
               "accessor": null,
-              "jsonPath": "$.participants.hits.edges[*].node.phenotype.observed",
+              "jsonPath": "$.participants.hits.edges[*].node.phenotype.hits.edges[*].node.observed",
               "sortable": true,
               "id": null,
               "type": "list"
@@ -2526,7 +2510,7 @@
             {
               "canChangeShow": false,
               "field": "participants.biospecimens.method_of_sample_procurement",
-              "query": "participants {\n                hits {\n                edges {\n                node {\n                biospecimens {\n                hits {\n                edges {\n                node {\n                method_of_sample_procurement\n              }\n              }\n              }\n              }\n              }\n              }\n              }\n              }",
+              "query": "participants { hits { edges { node { biospecimens { hits { edges { node { method_of_sample_procurement } } } } } } } }",
               "show": false,
               "accessor": null,
               "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.method_of_sample_procurement",
@@ -2558,7 +2542,7 @@
             }
           ]
         },
-        "timestamp": "2019-07-30T18:35:31.005Z"
+        "timestamp": "2019-09-18T00:00:00.000Z"
       },
       "matchbox-state": {
         "state": [
@@ -2645,7 +2629,7 @@
             "isActive": false
           }
         ],
-        "timestamp": "2019-07-30T18:35:30.929Z"
+        "timestamp": "2019-09-18T00:00:00.000Z"
       },
       "extended": [
         {
