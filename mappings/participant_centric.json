@@ -4526,7 +4526,7 @@
           "displayValues": {},
           "quickSearchEnabled": false,
           "field": "kf_id",
-          "displayName": "Kf Id",
+          "displayName": "Participant ID",
           "active": false,
           "isArray": false,
           "rangeStep": null,
