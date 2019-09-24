@@ -18,18 +18,4 @@ Arranger admin server provides a GraphQL API for configuring Arranger metadata t
 
 ## Creating an Arranger project
 
-To push the configurations so that Arranger uses them, we need to send them in ES using an HTTP `PUT` at the given url:
-
-`http://{ES env}.kids-first.io:9200/arranger-projects-{project id}/arranger-projects-{project id}/{index name}`
-
-- ES env: `kf-arranger-es-qa` in QA, `kf-arranger-es` in PRD.
-- project id: the index that will be used
-- index name: either `file_centric` or `participant_centric`
-
-We need to be connected to Bastion to access ES endpoints.
-
-E.g. to push in QA from the root of this repository:
-
-```sh
-curl -i -X PUT -H "Content-Type: application/json; charset=utf-8" -d @"mappings/file_centric.json" http://kf-arranger-es-qa.kids-first.io:9200/arranger-projects-2019_09_18/arranger-projects-2019_09_18/file_centric
-```
+See [mappings/README.md](./mappings/README.md#creating-a-project).
