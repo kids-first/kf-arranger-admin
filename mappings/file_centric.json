@@ -665,7 +665,7 @@
         {
           "field": "acl",
           "show": false,
-          "active": false,
+          "active": true,
           "type": "Aggregations"
         },
         {
