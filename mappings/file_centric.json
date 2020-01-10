@@ -2710,7 +2710,7 @@
       {
         "unit": null,
         "displayValues": {},
-        "quickSearchEnabled": false,
+        "quickSearchEnabled": true,
         "field": "external_id",
         "displayName": "File External ID",
         "active": false,
@@ -2734,7 +2734,7 @@
       {
         "unit": null,
         "displayValues": {},
-        "quickSearchEnabled": false,
+        "quickSearchEnabled": true,
         "field": "file_name",
         "displayName": "File Name",
         "active": false,
@@ -2770,7 +2770,7 @@
       {
         "unit": null,
         "displayValues": {},
-        "quickSearchEnabled": false,
+        "quickSearchEnabled": true,
         "field": "latest_did",
         "displayName": "Latest DID",
         "active": false,
@@ -2938,7 +2938,7 @@
       {
         "unit": null,
         "displayValues": {},
-        "quickSearchEnabled": false,
+        "quickSearchEnabled": true,
         "field": "participants.biospecimens.external_sample_id",
         "displayName": "Sample External ID",
         "active": false,
@@ -2950,7 +2950,7 @@
       {
         "unit": null,
         "displayValues": {},
-        "quickSearchEnabled": false,
+        "quickSearchEnabled": true,
         "field": "participants.biospecimens.kf_id",
         "displayName": "Biospecimen ID",
         "active": false,
@@ -3286,7 +3286,7 @@
       {
         "unit": null,
         "displayValues": {},
-        "quickSearchEnabled": false,
+        "quickSearchEnabled": true,
         "field": "participants.external_id",
         "displayName": "Participant External ID",
         "active": false,
