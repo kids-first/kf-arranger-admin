@@ -2678,7 +2678,7 @@
         "field": "controlled_access",
         "displayName": "Access",
         "active": false,
-        "isArray": true,
+        "isArray": false,
         "rangeStep": null,
         "type": "boolean",
         "primaryKey": false
