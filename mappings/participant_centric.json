@@ -1183,7 +1183,7 @@
             "query": "biospecimens { hits { edges { node { diagnoses { hits { edges { node { age_at_event_days } } } }",
             "show": false,
             "accessor": null,
-            "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.age_at_event_days",
+            "jsonPath": "$.biospecimens.hits.edges[*].node.diagnoses.hits.edges[*].node.age_at_event_days",
             "sortable": false,
             "id": null,
             "type": "list"
@@ -1205,7 +1205,7 @@
             "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { external_id } } } }",
             "show": false,
             "accessor": null,
-            "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.external_id",
+            "jsonPath": "$.biospecimens.hits.edges[*].node.diagnoses.hits.edges[*].node.external_id",
             "sortable": false,
             "id": null,
             "type": "list"
@@ -1216,7 +1216,7 @@
             "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { icd_id_diagnosis } } } }",
             "show": false,
             "accessor": null,
-            "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.icd_id_diagnosis",
+            "jsonPath": "$.biospecimens.hits.edges[*].node.diagnoses.hits.edges[*].node.icd_id_diagnosis",
             "sortable": false,
             "id": null,
             "type": "list"
@@ -1227,7 +1227,7 @@
             "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { kf_id } } } }",
             "show": false,
             "accessor": null,
-            "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.kf_id",
+            "jsonPath": "$.biospecimens.hits.edges[*].node.diagnoses.hits.edges[*].node.kf_id",
             "sortable": false,
             "id": null,
             "type": "list"
@@ -1238,7 +1238,7 @@
             "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { mondo_id_diagnosis } } } }",
             "show": false,
             "accessor": null,
-            "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.mondo_id_diagnosis",
+            "jsonPath": "$.biospecimens.hits.edges[*].node.diagnoses.hits.edges[*].node.mondo_id_diagnosis",
             "sortable": false,
             "id": null,
             "type": "list"
@@ -1249,7 +1249,7 @@
             "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { ncit_id_diagnosis } } } }",
             "show": false,
             "accessor": null,
-            "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.ncit_id_diagnosis",
+            "jsonPath": "$.biospecimens.hits.edges[*].node.diagnoses.hits.edges[*].node.ncit_id_diagnosis",
             "sortable": false,
             "id": null,
             "type": "list"
@@ -1260,7 +1260,7 @@
             "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { source_text_diagnosis } } } }",
             "show": false,
             "accessor": null,
-            "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.source_text_diagnosis",
+            "jsonPath": "$.biospecimens.hits.edges[*].node.diagnoses.hits.edges[*].node.source_text_diagnosis",
             "sortable": false,
             "id": null,
             "type": "list"
@@ -1271,7 +1271,7 @@
             "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { source_text_tumor_location } } } }",
             "show": false,
             "accessor": null,
-            "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.source_text_tumor_location",
+            "jsonPath": "$.biospecimens.hits.edges[*].node.diagnoses.hits.edges[*].node.source_text_tumor_location",
             "sortable": false,
             "id": null,
             "type": "list"
@@ -1282,7 +1282,7 @@
             "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { spatial_descriptor } } } }",
             "show": false,
             "accessor": null,
-            "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.spatial_descriptor",
+            "jsonPath": "$.biospecimens.hits.edges[*].node.diagnoses.hits.edges[*].node.spatial_descriptor",
             "sortable": false,
             "id": null,
             "type": "list"
@@ -1293,7 +1293,7 @@
             "query": "biospecimens { hits { edges { node { diagnoses  { hits { edges { node { uberon_id_tumor_location } } } }",
             "show": false,
             "accessor": null,
-            "jsonPath": "$.biospecimens.hits.edges[*].node.hits.edges[*].node.uberon_id_tumor_location",
+            "jsonPath": "$.biospecimens.hits.edges[*].node.diagnoses.hits.edges[*].node.uberon_id_tumor_location",
             "sortable": false,
             "id": null,
             "type": "list"
