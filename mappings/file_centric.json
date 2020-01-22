@@ -1499,7 +1499,7 @@
             "type": "list"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.biospecimens.diagnoses.hits.total",
             "query": null,
             "show": false,
