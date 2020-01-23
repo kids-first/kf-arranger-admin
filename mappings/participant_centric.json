@@ -561,6 +561,18 @@
           "type": "Aggregations"
         },
         {
+          "field": "files__sequencing_experiments__library_prep",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "files__sequencing_experiments__library_selection",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
           "field": "files__sequencing_experiments__library_strand",
           "show": false,
           "active": true,
@@ -736,6 +748,12 @@
         },
         {
           "field": "biospecimens__dbgap_consent_code",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "biospecimens__duo_code",
           "show": false,
           "active": true,
           "type": "Aggregations"
@@ -2037,6 +2055,28 @@
           },
           {
             "canChangeShow": false,
+            "field": "files.sequencing_experiments.library_prep",
+            "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { library_prep } } } } } } } }",
+            "show": false,
+            "accessor": null,
+            "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.library_prep",
+            "sortable": false,
+            "id": null,
+            "type": "list"
+          },
+          {
+            "canChangeShow": false,
+            "field": "files.sequencing_experiments.library_selection",
+            "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { library_selection } } } } } } } }",
+            "show": false,
+            "accessor": null,
+            "jsonPath": "$.files.hits.edges[*].node.sequencing_experiments.hits.edges[*].node.library_selection",
+            "sortable": false,
+            "id": null,
+            "type": "list"
+          },
+          {
+            "canChangeShow": false,
             "field": "files.sequencing_experiments.library_strand",
             "query": "files { hits { edges { node { sequencing_experiments { hits { edges { node { library_strand } } } } } } } }",
             "show": false,
@@ -2383,6 +2423,17 @@
             "show": false,
             "accessor": null,
             "jsonPath": "$.biospecimens.hits.edges[*].node.dbgap_consent_code",
+            "sortable": false,
+            "id": null,
+            "type": "list"
+          },
+          {
+            "canChangeShow": false,
+            "field": "biospecimens.duo_code",
+            "query": "biospecimens { hits { edges { node { duo_code } } } }",
+            "show": false,
+            "accessor": null,
+            "jsonPath": "$.biospecimens.hits.edges[*].node.duo_code",
             "sortable": false,
             "id": null,
             "type": "list"
@@ -2957,6 +3008,18 @@
         "displayName": "Dbgap Consent Code",
         "active": false,
         "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "biospecimens.duo_code",
+        "displayName": "Duo Code",
+        "active": false,
+        "isArray": true,
         "rangeStep": null,
         "type": "keyword",
         "primaryKey": false
@@ -4383,6 +4446,30 @@
         "quickSearchEnabled": false,
         "field": "files.sequencing_experiments.library_name",
         "displayName": "Files Sequencing Experiments Library Name",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "files.sequencing_experiments.library_prep",
+        "displayName": "Files Sequencing Experiments Library Prep",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "files.sequencing_experiments.library_selection",
+        "displayName": "Files Sequencing Experiments Library Selection",
         "active": false,
         "isArray": false,
         "rangeStep": null,
