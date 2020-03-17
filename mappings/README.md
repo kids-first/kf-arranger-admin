@@ -72,7 +72,7 @@ To push the configurations so that Arranger uses them, we need to send them in E
 `http://{ES env}.kids-first.io:9200/arranger-projects-{project id}/arranger-projects-{project id}/{index name}`
 
 - ES env: `kf-arranger-es-qa` in QA, `kf-arranger-es-prd` in PRD.
-- project id: the index that will be created. Use the same value for both indices. By convention, that should be "`YYYY_MM_DD_v1`", and increment from there if you need to push many times in a day. You can push over an existing index, so be careful.
+- project id: the index that will be created. Use the same value for both indices. By convention, that should be "`<commitID>-YYYY_MM_DD_v1`", and increment from there if you need to push many times in a day. You can push over an existing index, so be careful.
   > 💡 Use only alphanumerical characters and underscore for the project ID.
 - index name: either `file_centric` or `participant_centric`
 
