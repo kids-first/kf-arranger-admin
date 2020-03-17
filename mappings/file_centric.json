@@ -152,7 +152,6 @@
           "active": true,
           "type": "Aggregations"
         },
-
         {
           "field": "participants__biospecimens__diagnoses__age_at_event_days",
           "show": false,
@@ -219,7 +218,6 @@
           "active": true,
           "type": "Aggregations"
         },
-
         {
           "field": "availability",
           "show": false,
@@ -750,12 +748,6 @@
         },
         {
           "field": "participants__biospecimens__dbgap_consent_code",
-          "show": false,
-          "active": true,
-          "type": "Aggregations"
-        },
-        {
-          "field": "participants__biospecimens__duo_code",
           "show": false,
           "active": true,
           "type": "Aggregations"
@@ -1394,7 +1386,6 @@
             "id": null,
             "type": "number"
           },
-
           {
             "canChangeShow": false,
             "field": "participants.biospecimens.diagnoses.age_at_event_days",
@@ -2431,17 +2422,6 @@
           },
           {
             "canChangeShow": false,
-            "field": "participants.biospecimens.duo_code",
-            "query": "participants { hits { edges { node { biospecimens { hits { edges { node { duo_code } } } } } } } }",
-            "show": false,
-            "accessor": null,
-            "jsonPath": "$.participants.hits.edges[*].node.biospecimens.hits.edges[*].node.duo_code",
-            "sortable": false,
-            "id": null,
-            "type": "list"
-          },
-          {
-            "canChangeShow": false,
             "field": "participants.diagnoses.diagnosis",
             "query": "participants { hits { edges { node { diagnoses { hits { edges { node { diagnosis } } } } } } } }",
             "show": false,
@@ -3178,18 +3158,6 @@
       {
         "unit": null,
         "displayValues": {},
-        "quickSearchEnabled": false,
-        "field": "participants.biospecimens.duo_code",
-        "displayName": "Duo Code",
-        "active": false,
-        "isArray": true,
-        "rangeStep": null,
-        "type": "keyword",
-        "primaryKey": false
-      },
-      {
-        "unit": null,
-        "displayValues": {},
         "quickSearchEnabled": true,
         "field": "participants.biospecimens.external_aliquot_id",
         "displayName": "Aliquot External ID",
@@ -3379,7 +3347,6 @@
         "type": "nested",
         "primaryKey": false
       },
-
       {
         "unit": "d",
         "displayValues": {},
@@ -3524,7 +3491,6 @@
         "type": "id",
         "primaryKey": false
       },
-
       {
         "unit": null,
         "displayValues": {},
