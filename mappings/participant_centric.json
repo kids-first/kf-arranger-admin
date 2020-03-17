@@ -127,7 +127,7 @@
           "show": false,
           "active": true,
           "type": "NumericAggregations"
-        },                
+        },
         {
           "field": "biospecimens__diagnoses__diagnosis_category",
           "show": false,
@@ -259,7 +259,7 @@
           "show": false,
           "active": true,
           "type": "Aggregations"
-        },          
+        },
         {
           "field": "ethnicity",
           "show": false,
@@ -748,12 +748,6 @@
         },
         {
           "field": "biospecimens__dbgap_consent_code",
-          "show": false,
-          "active": true,
-          "type": "Aggregations"
-        },
-        {
-          "field": "biospecimens__duo_code",
           "show": false,
           "active": true,
           "type": "Aggregations"
@@ -1469,7 +1463,7 @@
             "sortable": false,
             "id": null,
             "type": "list"
-          },            
+          },
           {
             "canChangeShow": true,
             "field": "ethnicity",
@@ -2429,17 +2423,6 @@
           },
           {
             "canChangeShow": false,
-            "field": "biospecimens.duo_code",
-            "query": "biospecimens { hits { edges { node { duo_code } } } }",
-            "show": false,
-            "accessor": null,
-            "jsonPath": "$.biospecimens.hits.edges[*].node.duo_code",
-            "sortable": false,
-            "id": null,
-            "type": "list"
-          },
-          {
-            "canChangeShow": false,
             "field": "diagnoses.diagnosis",
             "query": "diagnoses { hits { edges { node { diagnosis } } } }",
             "show": false,
@@ -3016,18 +2999,6 @@
         "unit": null,
         "displayValues": {},
         "quickSearchEnabled": false,
-        "field": "biospecimens.duo_code",
-        "displayName": "Duo Code",
-        "active": false,
-        "isArray": true,
-        "rangeStep": null,
-        "type": "keyword",
-        "primaryKey": false
-      },
-      {
-        "unit": null,
-        "displayValues": {},
-        "quickSearchEnabled": false,
         "field": "biospecimens.external_aliquot_id",
         "displayName": "External Aliquot Id",
         "active": false,
@@ -3539,7 +3510,7 @@
         "rangeStep": null,
         "type": "keyword",
         "primaryKey": false
-      },        
+      },
       {
         "unit": null,
         "displayValues": {},
