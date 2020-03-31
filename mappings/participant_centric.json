@@ -939,6 +939,78 @@
           "type": "Aggregations"
         },
         {
+          "field": "observed_phenotype__name",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "observed_phenotype__parents",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "observed_phenotype__age_at_event_days",
+          "show": false,
+          "active": true,
+          "type": "NumericAggregations"
+        },
+        {
+          "field": "observed_phenotype__is_leaf",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "non_observed_phenotype__name",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "non_observed_phenotype__parents",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "non_observed_phenotype__age_at_event_days",
+          "show": false,
+          "active": true,
+          "type": "NumericAggregations"
+        },
+        {
+          "field": "non_observed_phenotype__is_leaf",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "mondo_diagnosis__name",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "mondo_diagnosis__parents",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "mondo_diagnosis__age_at_event_days",
+          "show": false,
+          "active": true,
+          "type": "NumericAggregations"
+        },
+        {
+          "field": "mondo_diagnosis__is_leaf",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
           "field": "biospecimens__method_of_sample_procurement",
           "show": false,
           "active": true,
@@ -2758,6 +2830,138 @@
             "show": false,
             "accessor": "phenotype.observed",
             "jsonPath": "$.phenotype.hits.edges[*].node.observed",
+            "sortable": true,
+            "id": null,
+            "type": "boolean"
+          },
+          {
+            "canChangeShow": true,
+            "field": "observed_phenotype.name",
+            "query": "observed_phenotype { hits { edges { node { name } } } }",
+            "show": false,
+            "accessor": "observed_phenotype.name",
+            "jsonPath": "$.observed_phenotype.hits.edges[*].node.name",
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "observed_phenotype.parents",
+            "query": "observed_phenotype { hits { edges { node { parents } } } }",
+            "show": false,
+            "accessor": "observed_phenotype.parents",
+            "jsonPath": "$.observed_phenotype.hits.edges[*].node.parents",
+            "sortable": true,
+            "id": null,
+            "type": "list"
+          },
+          {
+            "canChangeShow": true,
+            "field": "observed_phenotype.age_at_event_days",
+            "query": "observed_phenotype { hits { edges { node { age_at_event_days } } } }",
+            "show": false,
+            "accessor": "observed_phenotype.age_at_event_days",
+            "jsonPath": "$.observed_phenotype.hits.edges[*].node.age_at_event_days",
+            "sortable": true,
+            "id": null,
+            "type": "list"
+          },
+          {
+            "canChangeShow": true,
+            "field": "observed_phenotype.is_leaf",
+            "query": "observed_phenotype { hits { edges { node { is_leaf } } } }",
+            "show": false,
+            "accessor": "observed_phenotype.is_leaf",
+            "jsonPath": "$.observed_phenotype.hits.edges[*].node.is_leaf",
+            "sortable": true,
+            "id": null,
+            "type": "boolean"
+          },
+          {
+            "canChangeShow": true,
+            "field": "non_observed_phenotype.name",
+            "query": "non_observed_phenotype { hits { edges { node { name } } } }",
+            "show": false,
+            "accessor": "non_observed_phenotype.name",
+            "jsonPath": "$.non_observed_phenotype.hits.edges[*].node.name",
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "non_observed_phenotype.parents",
+            "query": "non_observed_phenotype { hits { edges { node { parents } } } }",
+            "show": false,
+            "accessor": "non_observed_phenotype.parents",
+            "jsonPath": "$.non_observed_phenotype.hits.edges[*].node.parents",
+            "sortable": true,
+            "id": null,
+            "type": "list"
+          },
+          {
+            "canChangeShow": true,
+            "field": "non_observed_phenotype.age_at_event_days",
+            "query": "non_observed_phenotype { hits { edges { node { age_at_event_days } } } }",
+            "show": false,
+            "accessor": "non_observed_phenotype.age_at_event_days",
+            "jsonPath": "$.non_observed_phenotype.hits.edges[*].node.age_at_event_days",
+            "sortable": true,
+            "id": null,
+            "type": "list"
+          },
+          {
+            "canChangeShow": true,
+            "field": "non_observed_phenotype.is_leaf",
+            "query": "non_observed_phenotype { hits { edges { node { is_leaf } } } }",
+            "show": false,
+            "accessor": "non_observed_phenotype.is_leaf",
+            "jsonPath": "$.non_observed_phenotype.hits.edges[*].node.is_leaf",
+            "sortable": true,
+            "id": null,
+            "type": "boolean"
+          },
+          {
+            "canChangeShow": true,
+            "field": "mondo_diagnosis.name",
+            "query": "mondo_diagnosis { hits { edges { node { name } } } }",
+            "show": false,
+            "accessor": "mondo_diagnosis.name",
+            "jsonPath": "$.mondo_diagnosis.hits.edges[*].node.name",
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "mondo_diagnosis.parents",
+            "query": "mondo_diagnosis { hits { edges { node { parents } } } }",
+            "show": false,
+            "accessor": "mondo_diagnosis.parents",
+            "jsonPath": "$.mondo_diagnosis.hits.edges[*].node.parents",
+            "sortable": true,
+            "id": null,
+            "type": "list"
+          },
+          {
+            "canChangeShow": true,
+            "field": "mondo_diagnosis.age_at_event_days",
+            "query": "mondo_diagnosis { hits { edges { node { age_at_event_days } } } }",
+            "show": false,
+            "accessor": "mondo_diagnosis.age_at_event_days",
+            "jsonPath": "$.mondo_diagnosis.hits.edges[*].node.age_at_event_days",
+            "sortable": true,
+            "id": null,
+            "type": "list"
+          },
+          {
+            "canChangeShow": true,
+            "field": "mondo_diagnosis.is_leaf",
+            "query": "mondo_diagnosis { hits { edges { node { is_leaf } } } }",
+            "show": false,
+            "accessor": "mondo_diagnosis.is_leaf",
+            "jsonPath": "$.mondo_diagnosis.hits.edges[*].node.is_leaf",
             "sortable": true,
             "id": null,
             "type": "boolean"
@@ -4817,6 +5021,186 @@
         "isArray": false,
         "rangeStep": null,
         "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "observed_phenotype",
+        "displayName": "Observed Phenotype",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "nested",
+        "primaryKey": false
+      },
+      {
+        "unit": "d",
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "observed_phenotype.age_at_event_days",
+        "displayName": "Age at Phenotype Assignment",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "integer",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "observed_phenotype.is_leaf",
+        "displayName": "Is Leaf",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "observed_phenotype.name",
+        "displayName": "Ontology Term Name",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "observed_phenotype.parents",
+        "displayName": "Ontology Term Parents",
+        "active": false,
+        "isArray": true,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "non_observed_phenotype",
+        "displayName": "Non Observed Phenotype",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "nested",
+        "primaryKey": false
+      },
+      {
+        "unit": "d",
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "non_observed_phenotype.age_at_event_days",
+        "displayName": "Age at Phenotype Assignment",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "integer",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "non_observed_phenotype.is_leaf",
+        "displayName": "Is Leaf",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "non_observed_phenotype.name",
+        "displayName": "Ontology Term Name",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "non_observed_phenotype.parents",
+        "displayName": "Ontology Term Parents",
+        "active": false,
+        "isArray": true,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "mondo_diagnosis",
+        "displayName": "Mondo Diagnosis",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "nested",
+        "primaryKey": false
+      },
+      {
+        "unit": "d",
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "mondo_diagnosis.age_at_event_days",
+        "displayName": "Age at Phenotype Assignment",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "integer",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "mondo_diagnosis.is_leaf",
+        "displayName": "Is Leaf",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "mondo_diagnosis.name",
+        "displayName": "Ontology Term Name",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "mondo_diagnosis.parents",
+        "displayName": "Ontology Term Parents",
+        "active": false,
+        "isArray": true,
+        "rangeStep": null,
+        "type": "keyword",
         "primaryKey": false
       },
       {
