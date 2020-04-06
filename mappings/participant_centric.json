@@ -4955,7 +4955,7 @@
         "unit": null,
         "displayValues": {},
         "quickSearchEnabled": false,
-        "field": "phenotype.hpo_phenotype_observed",
+        "field": "observed_phenotype.name",
         "displayName": "Observed Phenotype (HPO)",
         "active": false,
         "isArray": false,
