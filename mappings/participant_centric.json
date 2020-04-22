@@ -5040,7 +5040,7 @@
         "displayValues": {},
         "quickSearchEnabled": false,
         "field": "observed_phenotype.age_at_event_days",
-        "displayName": "Age at Phenotype Assignment",
+        "displayName": "Age at Observed Phenotype",
         "active": false,
         "isArray": false,
         "rangeStep": 1,
