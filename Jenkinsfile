@@ -14,7 +14,7 @@ ecs_service_type_1_standard {
   memory_container           = "2048"
   vcpu_task                  = "2048"
   memory_task                = "2048"
-  health_check_path = "/"
+  health_check_path = "/swagger-ui.html"
   dependencies = "ecr"
   friendly_dns_name = "arranger-admin"
 }
