@@ -12,7 +12,7 @@ ecs_service_type_1_standard {
   container_port = "443"
   vcpu_container             = "1024"
   memory_container           = "2048"
-  vcpu_task                  = "2048"
+  vcpu_task                  = "1024"
   memory_task                = "2048"
   health_check_path = "/status"
   dependencies = "ecr"
