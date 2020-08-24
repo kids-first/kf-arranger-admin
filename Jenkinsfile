@@ -17,4 +17,5 @@ ecs_service_type_1_standard {
   health_check_path = "/status"
   dependencies = "ecr"
   friendly_dns_name = "arranger-admin"
+  additional_ssl_cert_domain_name = "*.kidsfirstdrc.org"
 }
