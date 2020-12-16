@@ -4959,7 +4959,7 @@
         "active": false,
         "isArray": false,
         "rangeStep": null,
-        "type": "id",
+        "type": "keyword",
         "primaryKey": false
       },
       {
