@@ -37,12 +37,14 @@
           "show": false,
           "active": true,
           "type": "NumericAggregations"
-        },        {
+        },
+        {
           "field": "participant_count",
           "show": false,
           "active": true,
           "type": "NumericAggregations"
-        },        {
+        },
+        {
           "field": "file_count",
           "show": false,
           "active": true,
