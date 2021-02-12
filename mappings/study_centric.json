@@ -1,0 +1,62 @@
+{
+  "index": "study_centric",
+  "name": "study",
+  "esType": "study_centric",
+  "timestamp": "2021-02-11T00:00:00.000Z",
+  "active": true,
+  "config": {
+    "aggs-state": {
+      "timestamp": "2021-02-11T00:00:00.000Z",
+      "state": [
+        {
+          "field": "kf_id",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "name",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "external_id",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "data_access_authority",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "participant_count",
+          "show": false,
+          "active": true,
+          "type": "NumericAggregations"
+        },
+        {
+          "field": "participant_count",
+          "show": false,
+          "active": true,
+          "type": "NumericAggregations"
+        },
+        {
+          "field": "file_count",
+          "show": false,
+          "active": true,
+          "type": "NumericAggregations"
+        },
+        {
+          "field": "family_count",
+          "show": false,
+          "active": true,
+          "type": "NumericAggregations"
+        }
+      ]
+    }
+  }
+}
