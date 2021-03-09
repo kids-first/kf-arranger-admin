@@ -39,12 +39,6 @@
           "type": "NumericAggregations"
         },
         {
-          "field": "participant_count",
-          "show": false,
-          "active": true,
-          "type": "NumericAggregations"
-        },
-        {
           "field": "file_count",
           "show": false,
           "active": true,
@@ -55,8 +49,148 @@
           "show": false,
           "active": true,
           "type": "NumericAggregations"
+        },
+        {
+          "field": "program",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "domain",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "code",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
         }
       ]
-    }
+    },
+    "extended": [
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "kf_id",
+        "displayName": "Study Id",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "id",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "name",
+        "displayName": "Study Name",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "external_id",
+        "displayName": "Study External Id",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "data_access_authority",
+        "displayName": "Data Access Authority",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "participant_count",
+        "displayName": "Study Participants Count",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "long",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "file_count",
+        "displayName": "Study Files Count",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "long",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "family_count",
+        "displayName": "Study Families Count",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "long",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "program",
+        "displayName": "Program",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "domain",
+        "displayName": "Domain",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "code",
+        "displayName": "Story Code",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      }
+    ]
   }
 }
