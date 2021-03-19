@@ -1,0 +1,38 @@
+{
+  "index": "variant_stats",
+  "name": "variantStats",
+  "esType": "variant_stats",
+  "timestamp": "2021-02-11T00:00:00.000Z",
+  "active": true,
+  "config": {
+    "aggs-state": {
+      "timestamp": "2021-02-11T00:00:00.000Z",
+      "state": [
+        {
+          "field": "studiesCount",
+          "show": false,
+          "active": true,
+          "type": "NumericAggregations"
+        },
+        {
+          "field": "participantsCount",
+          "show": false,
+          "active": true,
+          "type": "NumericAggregations"
+        },
+        {
+          "field": "distinctVariantsCount",
+          "show": false,
+          "active": true,
+          "type": "NumericAggregations"
+        },
+        {
+          "field": "occurrencesCount",
+          "show": false,
+          "active": true,
+          "type": "NumericAggregations"
+        }
+      ]
+    }
+  }
+}

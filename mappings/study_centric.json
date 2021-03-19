@@ -67,6 +67,24 @@
           "show": false,
           "active": true,
           "type": "Aggregations"
+        },
+        {
+          "field": "family_data",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "experimental_strategy",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "available_data_types",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
         }
       ]
     },
@@ -189,6 +207,42 @@
         "isArray": false,
         "rangeStep": null,
         "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "family_data",
+        "displayName": "Family Data",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "Boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "experimental_strategy",
+        "displayName": "Experimental Strategy",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "list",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "available_data_types",
+        "displayName": "Available Data Types",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "list",
         "primaryKey": false
       }
     ]
