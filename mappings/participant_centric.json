@@ -21,6 +21,12 @@
           "type": "Aggregations"
         },
         {
+          "field": "available_data_categories",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
           "field": "biospecimens__age_at_event_days",
           "show": false,
           "active": true,
@@ -771,6 +777,24 @@
           "type": "Aggregations"
         },
         {
+          "field": "study__code",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "study__domain",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "study__program",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
           "field": "files__latest_did",
           "show": false,
           "active": true,
@@ -1064,6 +1088,17 @@
             "query": null,
             "show": false,
             "accessor": "available_data_types",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "available_data_categories",
+            "query": null,
+            "show": false,
+            "accessor": "available_data_categories",
             "jsonPath": null,
             "sortable": true,
             "id": null,
@@ -2533,6 +2568,39 @@
             "type": "string"
           },
           {
+            "canChangeShow": true,
+            "field": "study.code",
+            "query": null,
+            "show": false,
+            "accessor": "study.code",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "study.domain",
+            "query": null,
+            "show": false,
+            "accessor": "study.domain",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "study.program",
+            "query": null,
+            "show": false,
+            "accessor": "study.program",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
             "canChangeShow": false,
             "field": "files.latest_did",
             "query": "files { hits { edges { node { latest_did } } } }",
@@ -3126,6 +3194,18 @@
         "quickSearchEnabled": false,
         "field": "available_data_types",
         "displayName": "Available Data Types",
+        "active": false,
+        "isArray": true,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "available_data_categories",
+        "displayName": "Available Data Categories",
         "active": false,
         "isArray": true,
         "rangeStep": null,
@@ -5370,6 +5450,42 @@
         "quickSearchEnabled": false,
         "field": "study.version",
         "displayName": "Version",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "study.code",
+        "displayName": "Study Code",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "study.domain",
+        "displayName": "Study Domain",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "study.program",
+        "displayName": "Study Program",
         "active": false,
         "isArray": false,
         "rangeStep": null,
