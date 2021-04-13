@@ -15,6 +15,18 @@
           "type": "Aggregations"
         },
         {
+          "field": "participants__study__domain",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "participants__study__program",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
           "field": "participants__diagnoses__diagnosis_category",
           "show": true,
           "active": true,
@@ -100,6 +112,12 @@
         },
         {
           "field": "data_type",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "data_category",
           "show": true,
           "active": true,
           "type": "Aggregations"
@@ -998,6 +1016,39 @@
           },
           {
             "canChangeShow": true,
+            "field": "participants.study.domain",
+            "query": "participants { hits { edges { node { study { domain } } } } }",
+            "show": true,
+            "accessor": null,
+            "jsonPath": "$.participants.hits.edges[*].node.study.domain",
+            "sortable": true,
+            "id": null,
+            "type": "list"
+          },
+          {
+            "canChangeShow": true,
+            "field": "participants.study.program",
+            "query": "participants { hits { edges { node { study { program } } } } }",
+            "show": true,
+            "accessor": null,
+            "jsonPath": "$.participants.hits.edges[*].node.study.program",
+            "sortable": true,
+            "id": null,
+            "type": "list"
+          },
+          {
+            "canChangeShow": true,
+            "field": "participants.study.code",
+            "query": "participants { hits { edges { node { study { code } } } } }",
+            "show": true,
+            "accessor": null,
+            "jsonPath": "$.participants.hits.edges[*].node.study.code",
+            "sortable": true,
+            "id": null,
+            "type": "list"
+          },
+          {
+            "canChangeShow": true,
             "field": "participants.is_proband",
             "query": "participants { hits { edges { node { is_proband } } } }",
             "show": true,
@@ -1024,6 +1075,17 @@
             "query": null,
             "show": true,
             "accessor": "data_type",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "data_category",
+            "query": null,
+            "show": true,
+            "accessor": "data_category",
             "jsonPath": null,
             "sortable": true,
             "id": null,
@@ -3102,6 +3164,18 @@
       {
         "unit": null,
         "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "data_category",
+        "displayName": "Data Category",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
         "quickSearchEnabled": true,
         "field": "external_id",
         "displayName": "File External ID",
@@ -5016,6 +5090,30 @@
         "quickSearchEnabled": false,
         "field": "participants.study.short_name",
         "displayName": "Study Name",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "participants.study.domain",
+        "displayName": "Study Domain",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "participants.study.program",
+        "displayName": "Study Program",
         "active": false,
         "isArray": false,
         "rangeStep": null,
