@@ -10,19 +10,19 @@
       "state": [
         {
           "field": "participants__study__short_name",
-          "show": true,
+          "show": false,
           "active": true,
           "type": "Aggregations"
         },
         {
           "field": "participants__study__domain",
-          "show": true,
+          "show": false,
           "active": true,
           "type": "Aggregations"
         },
         {
           "field": "participants__study__program",
-          "show": true,
+          "show": false,
           "active": true,
           "type": "Aggregations"
         },
@@ -1007,7 +1007,7 @@
             "canChangeShow": true,
             "field": "participants.study.short_name",
             "query": "participants { hits { edges { node { study { short_name } } } } }",
-            "show": true,
+            "show": false,
             "accessor": null,
             "jsonPath": "$.participants.hits.edges[*].node.study.short_name",
             "sortable": true,
@@ -1018,18 +1018,18 @@
             "canChangeShow": true,
             "field": "participants.study.domain",
             "query": "participants { hits { edges { node { study { domain } } } } }",
-            "show": true,
+            "show": false,
             "accessor": null,
             "jsonPath": "$.participants.hits.edges[*].node.study.domain",
             "sortable": true,
             "id": null,
-            "type": "list"
+            "type": "keyword"
           },
           {
             "canChangeShow": true,
             "field": "participants.study.program",
             "query": "participants { hits { edges { node { study { program } } } } }",
-            "show": true,
+            "show": false,
             "accessor": null,
             "jsonPath": "$.participants.hits.edges[*].node.study.program",
             "sortable": true,
@@ -5100,10 +5100,22 @@
         "unit": null,
         "displayValues": {},
         "quickSearchEnabled": false,
+        "field": "participants.study.code",
+        "displayName": "Study Code",
+        "active": false,
+        "isArray": false,
+        "rangeStep": null,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
         "field": "participants.study.domain",
         "displayName": "Study Domain",
         "active": false,
-        "isArray": false,
+        "isArray": true,
         "rangeStep": null,
         "type": "keyword",
         "primaryKey": false
