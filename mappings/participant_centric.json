@@ -2587,7 +2587,7 @@
             "jsonPath": null,
             "sortable": true,
             "id": null,
-            "type": "string"
+            "type": "keyword"
           },
           {
             "canChangeShow": true,
@@ -5475,7 +5475,7 @@
         "field": "study.domain",
         "displayName": "Study Domain",
         "active": false,
-        "isArray": false,
+        "isArray": true,
         "rangeStep": null,
         "type": "keyword",
         "primaryKey": false
