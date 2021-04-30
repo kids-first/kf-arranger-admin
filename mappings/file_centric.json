@@ -1719,7 +1719,7 @@
             "type": "list"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.diagnoses.is_tagged",
             "query": "participants { hits { edges { node { diagnoses { hits { edges { node { is_tagged } } } } } } } }",
             "show": false,
@@ -1730,7 +1730,7 @@
             "type": "boolean"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.diagnoses.mondo.name",
             "query": "participants { hits { edges { node { diagnoses { hits { edges { node { mondo { hits { edges { node { name } } } } } } } } } } } }",
             "show": false,
@@ -1741,7 +1741,7 @@
             "type": "string"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.diagnoses.mondo.parents",
             "query": "participants { hits { edges { node { diagnoses { hits { edges { node { mondo { hits { edges { node { parents } } } } } } } } } } } }",
             "show": false,
@@ -1752,7 +1752,7 @@
             "type": "list"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.diagnoses.mondo.age_at_event_days",
             "query": "participants { hits { edges { node { diagnoses { hits { edges { node { mondo { hits { edges { node { age_at_event_days } } } } } } } } } } } }",
             "show": false,
@@ -1763,7 +1763,7 @@
             "type": "number"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.diagnoses.mondo.is_leaf",
             "query": "participants { hits { edges { node { diagnoses { hits { edges { node { mondo { hits { edges { node { is_leaf } } } } } } } } } } } }",
             "show": false,
@@ -2863,7 +2863,7 @@
             "type": "list"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.phenotype.observed",
             "query": "participants { hits { edges { node { phenotype { hits { edges { node { observed } } } } } } } }",
             "show": false,
@@ -2874,7 +2874,7 @@
             "type": "list"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.observed_phenotype.name",
             "query": "participants { hits { edges { node { observed_phenotype { hits { edges { node { name } } } } } } } }",
             "show": false,
@@ -2885,7 +2885,7 @@
             "type": "string"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.observed_phenotype.parents",
             "query": "participants { hits { edges { node { observed_phenotype { hits { edges { node { parents } } } } } } } }",
             "show": false,
@@ -2896,7 +2896,7 @@
             "type": "list"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.observed_phenotype.age_at_event_days",
             "query": "participants { hits { edges { node { observed_phenotype { hits { edges { node { age_at_event_days } } } } } } } }",
             "show": false,
@@ -2907,7 +2907,7 @@
             "type": "list"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.observed_phenotype.is_leaf",
             "query": "participants { hits { edges { node { observed_phenotype { hits { edges { node { is_leaf } } } } } } } }",
             "show": false,
@@ -2918,7 +2918,7 @@
             "type": "boolean"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.non_observed_phenotype.name",
             "query": "participants { hits { edges { node { non_observed_phenotype { hits { edges { node { name } } } } } } } }",
             "show": false,
@@ -2929,7 +2929,7 @@
             "type": "string"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.non_observed_phenotype.parents",
             "query": "participants { hits { edges { node { non_observed_phenotype { hits { edges { node { parents } } } } } } } }",
             "show": false,
@@ -2940,7 +2940,7 @@
             "type": "list"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.non_observed_phenotype.age_at_event_days",
             "query": "participants { hits { edges { node { non_observed_phenotype { hits { edges { node { age_at_event_days } } } } } } } }",
             "show": false,
@@ -2951,7 +2951,7 @@
             "type": "list"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.non_observed_phenotype.is_leaf",
             "query": "participants { hits { edges { node { non_observed_phenotype { hits { edges { node { is_leaf } } } } } } } }",
             "show": false,
