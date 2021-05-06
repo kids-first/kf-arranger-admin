@@ -1774,7 +1774,7 @@
             "type": "boolean"
           },
           {
-            "canChangeShow": true,
+            "canChangeShow": false,
             "field": "participants.diagnoses.mondo.is_tagged",
             "query": "participants { hits { edges { node { diagnoses { hits { edges { node { mondo { hits { edges { node { is_tagged } } } } } } } } } } } }",
             "show": false,
