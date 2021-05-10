@@ -1,0 +1,462 @@
+{
+  "index" : "study_centric",
+  "name" : "studies",
+  "esType": "study_centric",
+  "timestamp" : "2021-04-07T18:19:28.738Z",
+  "active" : true,
+  "config" : {
+    "aggs-state" : {
+      "timestamp" : "2021-04-07T18:19:28.819Z",
+      "state" : [
+        {
+          "field" : "code",
+          "type" : "Aggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "data_access_authority",
+          "type" : "Aggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "data_categories",
+          "type" : "Aggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "data_category_count__count",
+          "type" : "NumericAggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "data_category_count__data_category",
+          "type" : "Aggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "domain",
+          "type" : "Aggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "experimental_strategy",
+          "type" : "Aggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "external_id",
+          "type" : "Aggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "family_count",
+          "type" : "NumericAggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "family_data",
+          "type" : "Aggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "file_count",
+          "type" : "NumericAggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "kf_id",
+          "type" : "Aggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "name",
+          "type" : "Aggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "participant_count",
+          "type" : "NumericAggregations",
+          "show" : false,
+          "active" : true
+        },
+        {
+          "field" : "program",
+          "type" : "Aggregations",
+          "show" : false,
+          "active" : true
+        }
+      ]
+    },
+    "columns-state" : {
+      "state" : {
+        "type" : "studies",
+        "keyField" : "id",
+        "defaultSorted" : [
+          {
+            "id" : "code",
+            "desc" : false
+          }
+        ],
+        "columns" : [
+          {
+            "show" : false,
+            "type" : "string",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "code",
+            "accessor" : "code"
+          },
+          {
+            "show" : false,
+            "type" : "string",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "data_access_authority",
+            "accessor" : "data_access_authority"
+          },
+          {
+            "show" : false,
+            "type" : "keyword",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "data_categories",
+            "accessor" : "data_categories"
+          },
+          {
+            "show" : false,
+            "type" : "list",
+            "sortable" : false,
+            "canChangeShow" : false,
+            "field" : "data_category_count.count",
+            "query" : "data_category_count { hits { edges { node { count } } } }",
+          "jsonPath" : "$.data_category_count.hits.edges[*].node.count"
+          },
+          {
+            "show" : false,
+            "type" : "list",
+            "sortable" : false,
+            "canChangeShow" : false,
+            "field" : "data_category_count.data_category",
+            "query" : "data_category_count { hits { edges { node { data_category } } } }",
+          "jsonPath" : "$.data_category_count.hits.edges[*].node.data_category"
+          },
+          {
+            "show" : false,
+            "type" : "number",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "data_category_count.hits.total",
+            "accessor" : "data_category_count.hits.total"
+          },
+          {
+            "show" : false,
+            "type" : "keyword",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "domain",
+            "accessor" : "domain"
+          },
+          {
+            "show" : false,
+            "type" : "string",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "experimental_strategy",
+            "accessor" : "experimental_strategy"
+          },
+          {
+            "show" : false,
+            "type" : "string",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "external_id",
+            "accessor" : "external_id"
+          },
+          {
+            "show" : false,
+            "type" : "number",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "family_count",
+            "accessor" : "family_count"
+          },
+          {
+            "show" : false,
+            "type" : "boolean",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "family_data",
+            "accessor" : "family_data"
+          },
+          {
+            "show" : false,
+            "type" : "number",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "file_count",
+            "accessor" : "file_count"
+          },
+          {
+            "show" : false,
+            "type" : "string",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "kf_id",
+            "accessor" : "kf_id"
+          },
+          {
+            "show" : false,
+            "type" : "string",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "name",
+            "accessor" : "name"
+          },
+          {
+            "show" : false,
+            "type" : "number",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "participant_count",
+            "accessor" : "participant_count"
+          },
+          {
+            "show" : false,
+            "type" : "string",
+            "sortable" : true,
+            "canChangeShow" : true,
+            "field" : "program",
+            "accessor" : "program"
+          }
+        ]
+      },
+      "timestamp" : "2021-04-07T18:19:28.874Z"
+    },
+    "matchbox-state" : {
+      "state" : [
+        {
+          "displayName" : "studies",
+          "field" : "",
+          "isActive" : false,
+          "keyField" : null,
+          "searchFields" : [ ]
+        },
+        {
+          "displayName" : "Data Category Count",
+          "field" : "data_category_count",
+          "isActive" : false,
+          "keyField" : null,
+          "searchFields" : [ ]
+        }
+      ],
+      "timestamp" : "2021-04-07T18:19:28.874Z"
+    },
+    "extended" : [
+      {
+        "field" : "code",
+        "type" : "text",
+        "displayName" : "Code",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "data_access_authority",
+        "type" : "keyword",
+        "displayName" : "Data Access Authority",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "data_categories",
+        "type" : "keyword",
+        "displayName" : "Data Categories",
+        "active" : false,
+        "isArray" : true,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "data_category_count",
+        "type" : "nested",
+        "displayName" : "Data Category Count",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "data_category_count.count",
+        "type" : "long",
+        "displayName" : "Data Category Count Count",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "data_category_count.data_category",
+        "type" : "keyword",
+        "displayName" : "Data Category Count Data Category",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "domain",
+        "type" : "keyword",
+        "displayName" : "Domain",
+        "active" : false,
+        "isArray" : true,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "experimental_strategy",
+        "type" : "keyword",
+        "displayName" : "Experimental Strategy",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "external_id",
+        "type" : "id",
+        "displayName" : "External Id",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "family_count",
+        "type" : "long",
+        "displayName" : "Family Count",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "family_data",
+        "type" : "boolean",
+        "displayName" : "Family Data",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "file_count",
+        "type" : "long",
+        "displayName" : "File Count",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "kf_id",
+        "type" : "id",
+        "displayName" : "Kf Id",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "name",
+        "type" : "text",
+        "displayName" : "Name",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "participant_count",
+        "type" : "long",
+        "displayName" : "Participant Count",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      },
+      {
+        "field" : "program",
+        "type" : "keyword",
+        "displayName" : "Program",
+        "active" : false,
+        "isArray" : false,
+        "primaryKey" : false,
+        "quickSearchEnabled" : false,
+        "unit" : null,
+        "displayValues" : { },
+        "rangeStep" : 1
+      }
+    ]
+  }
+}
