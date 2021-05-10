@@ -2,11 +2,11 @@
   "index" : "study_centric",
   "name" : "studies",
   "esType": "study_centric",
-  "timestamp" : "2021-04-07T18:19:28.738Z",
+  "timestamp" : "2019-09-18T00:00:00.000Z",
   "active" : true,
   "config" : {
     "aggs-state" : {
-      "timestamp" : "2021-04-07T18:19:28.819Z",
+      "timestamp" : "2019-09-18T00:00:00.000Z",
       "state" : [
         {
           "field" : "code",
